@@ -1,3 +1,1 @@
-![GlassKit logo](/glasskit.png)
-
-Welcome to GlassKit.
+Welcome to GlassKit. GlassKit is a project to revive the original Google Glass Explorer Edition from 2014.

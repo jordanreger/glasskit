@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Emoji&display=swap');
 
 ::selection {
-  color: #212121;
+  color: #000;
   background: #ffe551;
 }
 
@@ -11,7 +11,7 @@ body {
   padding: 0 10px;
   font-family: "Inter", sans-serif, "Noto Emoji";
   color: #F0F0F0;
-  background-color: #191919;
+  background-color: #000;
 }
 
 h1, h2, h3 {
