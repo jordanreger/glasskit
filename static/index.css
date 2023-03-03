@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Emoji&display=swap');
+
+::selection {
+  color: #212121;
+  background: #ffe551;
+}
+
+body {
+  max-width: 650px;
+  margin: 40px auto;
+  padding: 0 10px;
+  font-family: "Inter", sans-serif, "Noto Emoji";
+  color: #F0F0F0;
+  background-color: #191919;
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+}
+
+a {
+  color: #ffe551;
+}
+
+pre {
+  font-family: monospace;
+  font-size: initial;
+  line-height: initial;
+  overflow-x: auto;
+}
+
+blockquote {
+  border-left: 2px solid #F0F0F0;
+  margin-left: 1em;
+  padding-left: 1em;
+}
