@@ -1,0 +1,11 @@
+[book]
+authors = ["Jordan Reger"]
+language = "en"
+multilingual = false
+src = "src"
+title = "GlassKit"
+description = "Reviving the Google Glass."
+
+[output.html]
+git-repository-url = "https://github.com/GlassKit/website"
+edit-url-template = "https://github.com/GlassKit/website/edit/main/{path}"
