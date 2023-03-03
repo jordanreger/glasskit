@@ -147,12 +147,14 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "c6afb5b5b1e0ac20",
+  "active": "3ecc86594c3f6d94",
   "lastOpenFiles": [
     "static/glasskit.png",
+    "index.md",
+    "glasskit.png.md",
+    "glasskit.png",
     "static/index.css",
     "static",
-    "index.md",
     "website",
     "main.ts"
   ]
