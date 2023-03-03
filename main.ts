@@ -31,7 +31,8 @@ async function handler(req: Request): Promise<Response> {
     if(path === "/") {
       page = `<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no"><link rel="preload" href="/index.css" as="style"><link rel="stylesheet" media="all" href="/index.css" type="text/css"><link rel="icon" href="/glasskit.png" />` + `<h1>GlassKit</h1>` + Marked.parse(await Deno.readTextFile(`./index.md`)).content;
       content_type = "text/html; charset=utf-8";
-    } else {
+    }
+    else {
       try {
         page = `<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no"><link rel="preload" href="/index.css" as="style"><link rel="stylesheet" media="all" href="/index.css" type="text/css">` + `<h1 style="text-transform: capitalize"><a href="/" style="text-decoration: none"><--</a>${" "}${path.replace(".md", "").split("/")[path.split("/").length - 1]}</h1>` + Marked.parse(await Deno.readTextFile(`.${path}${path.includes(".md") ? "" : ".md"}`)).content;
         content_type = "text/html; charset=utf-8";
