@@ -82,7 +82,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html">Introduction</a></li><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">1.</strong> Getting Started</a></li><li class="chapter-item expanded "><a href="development/index.html"><strong aria-hidden="true">2.</strong> Developing Glassware</a></li><li class="chapter-item expanded "><a href="glassware/index.html"><strong aria-hidden="true">3.</strong> Downloading Glassware</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html">Introduction</a></li><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">1.</strong> Getting Started</a></li><li class="chapter-item expanded "><a href="development/index.html"><strong aria-hidden="true">2.</strong> Developing Glassware</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="development/hello-glass.html"><strong aria-hidden="true">2.1.</strong> Hello Glass tutorial</a></li><li class="chapter-item expanded "><a href="development/gdk.html"><strong aria-hidden="true">2.2.</strong> Glass Development Kit</a></li></ol></li><li class="chapter-item expanded "><a href="glassware/index.html"><strong aria-hidden="true">3.</strong> Downloading Glassware</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -149,9 +149,9 @@
                         <h1 id="introduction"><a class="header" href="#introduction">Introduction</a></h1>
 <p><strong>GlassKit</strong> is a modern revival of the original Google Glass Explorer Edition. This is accomplished by providing up-to-date information on how to revive your Glass with XE24, how to restore some of the original functionality, and how to build Glassware yourself!</p>
 <h2 id="contributing"><a class="header" href="#contributing">Contributing</a></h2>
-<p>GlassKit is a free and open source project. The code is on <a href="https://github.com/GlassKit">GitHub</a>, as well as issues and feature requests. </p>
+<p>GlassKit is a free and open source project. The code is on <a href="https://github.com/GlassKit">GitHub</a>, as well as issues and feature requests.</p>
 <h2 id="questions-and-concerns"><a class="header" href="#questions-and-concerns">Questions and Concerns</a></h2>
-<p>Please send an email to <a href="mailto:glasskit@jordanreger.com">glasskit@jordanreger.com</a>.</p>
+<p>If you have any questions or concerns, please send an email to <a href="mailto:glasskit@jordanreger.com">glasskit@jordanreger.com</a>.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="getting-started"><a class="header" href="#getting-started">Getting Started</a></h1>
 <p>Getting started with your Glass is fairly complicated, but don't let it phase you! Below is an <em><strong>incomplete</strong></em> tutorial on how to get your Glass up and running.</p>
 <h2 id="installing-xe24"><a class="header" href="#installing-xe24">Installing XE24</a></h2>
@@ -182,17 +182,15 @@
 <h2 id="successful-installation-of-xe24"><a class="header" href="#successful-installation-of-xe24">Successful Installation of XE24</a></h2>
 <p>Congrats! You've successfully installed XE24 and you're ready to start using Glassware. At the moment, it's a bit of a technical process; we're working on it though! For now, <a href="https://discord.gg/6xdEw33hKb">join the Discord</a> and a member of the community will be able to help you if you need it.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="developing-glassware"><a class="header" href="#developing-glassware">Developing Glassware</a></h1>
+<p>Developing Glassware is actually quite easy, due to the Google Glass being an Android device. It still takes some care, as it's not a new device and it's certainly not a &quot;normal&quot; one. The following guide (the <a href="development/./hello-glass.html">Hello Glass tutorial</a>) will help you get accustomed to modern Android development for a device that's not so modern.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="hello-glass-tutorial"><a class="header" href="#hello-glass-tutorial">Hello Glass Tutorial</a></h1>
 <h2 id="introduction-1"><a class="header" href="#introduction-1">Introduction</a></h2>
 <p>Before we start; if your Glass isn't set up yet, view <a href="development/../getting-started.html">this page</a>. Otherwise, this assumes that your Glass is set up, you have at least a little bit of technical/programming knowledge, and you're ready to go. If you'd like to take a look at the fully set up project or take the app for a spin, check out the <a href="https://github.com/GlassKit/HelloGlass">HelloGlass GitHub repository</a>.</p>
-<h2 id="getting-started-1"><a class="header" href="#getting-started-1">Getting Started</a></h2>
+<h2 id="getting-started-1"><a class="header" href="#getting-started-1">Getting started</a></h2>
 <p>First, let's initialize a new <strong>Empty Activity</strong> project with the <strong>Minimum SDK</strong> set to <code>API 19: Android 4.4 (KitKat)</code>. Wait for a bit for it to get itself set up, and then we're ready to move on. </p>
 <h2 id="importing-the-gdk"><a class="header" href="#importing-the-gdk">Importing the GDK</a></h2>
-<p>To get started, you can <a href="https://github.com/GlassKit/gdk/releases/download/v1.0.0/gdk.jar">download the <em>original</em> GDK</a> from my GitHub. Here's the source if you ever want to take a look: <a href="https://github.com/GlassKit/gdk">GlassKit/gdk</a>. Drag the GDK into the <code>app/libs</code> folder (which can be found by switching the tab at the top left from <code>Android</code> to <code>Project</code>). </p>
-<blockquote>
-<p><strong>IMPORTANT</strong>: you have to right click on <code>gdk.jar</code> and select <strong>Add as Library</strong> to be able to use it in your project.</p>
-</blockquote>
-<p>You will now be able to use the old GDK in whatever version you're using!</p>
-<h2 id="changes"><a class="header" href="#changes">Changes</a></h2>
+<p>To get started, please <a href="https://github.com/GlassKit/gdk/releases/download/v1.0.0/gdk.jar">download the <em>original</em> GDK</a> - here's the source if you ever want to take a look: <a href="https://github.com/GlassKit/gdk">GlassKit/gdk</a> - and drag it into the <code>app/libs</code> folder (which can be found by switching the tab at the top left from <code>Android</code> to <code>Project</code>). If the <code>libs</code> folder isn't in the <code>app</code> directory, you will have to make it.<sup class="footnote-reference"><a href="#1">1</a></sup> Finally, right click on <code>gdk.jar</code> in the <code>libs</code> folder and select <strong>Add as Library</strong> from the menu to be able to use it in your project. You will now be able to use the old GDK in whatever version you're using!</p>
+<h2 id="changes-to-the-default-project"><a class="header" href="#changes-to-the-default-project">Changes to the default project</a></h2>
 <p>Below are a few changes we need to make before we're ready to run:</p>
 <h3 id="androidmanifestxml"><a class="header" href="#androidmanifestxml"><code>AndroidManifest.xml</code></a></h3>
 <p>At the path <code>app/manifests/AndroidManifest.xml</code>, we're going to tweak just a couple things. Replace the <code>&lt;activity&gt;&lt;/activity&gt;</code> with what's below:</p>
@@ -246,11 +244,18 @@ public class MainActivity extends Activity {
 &lt;!-- https://developers.google.com/glass/develop/gdk/reference/com/google/android/glass/app/VoiceTriggers.Command --&gt;  
 &lt;trigger command=&quot;SHOW_ME_A_DEMO&quot; /&gt;
 </code></pre>
-<h2 id="final-steps"><a class="header" href="#final-steps">Final Steps</a></h2>
+<h2 id="final-steps"><a class="header" href="#final-steps">Final steps</a></h2>
 <p>To get your code to run on your Glass, you must first navigate to <strong>Run &gt; Edit Configurations</strong> and then at the bottom under <strong>Launch Options</strong>, set the <strong>Launch</strong> parameter to be <strong>Specified Activity</strong> instead of <strong>Default Activity</strong>. Below, select <code>com.{your name}.{project name}.MainActivity</code> and then hit <strong>Apply</strong>.</p>
 <p>You should be able to build and run now!</p>
-<h2 id="conclusion"><a class="header" href="#conclusion">Conclusion</a></h2>
-<p>This is just a simple boilerplate application to get you started with modern Glassware development.</p>
+<h2 id="footnotes"><a class="header" href="#footnotes">Footnotes</a></h2>
+<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<p>The GlassKit team is working on refactoring the Hello Glass repository for easier startup. This includes adding the GDK and <code>lib</code> folder automatically, regardless of the fact that it doesn't need it <em>at the moment</em>.</p>
+</div>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="glass-development-kit"><a class="header" href="#glass-development-kit">Glass Development Kit</a></h1>
+<p>The Glass Development Kit (shortened as GDK) is an Android sub-library that contains Glass-specific development tools.</p>
+<blockquote>
+<p><strong>todo</strong>: finish page</p>
+</blockquote>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="downloading-glassware"><a class="header" href="#downloading-glassware">Downloading Glassware</a></h1>
 <p>The GlassKit team is currently working on porting all of the old <a href="https://github.com/googleglass/">gdk-samples</a> and other basic applications.</p>
 
@@ -271,6 +276,22 @@ public class MainActivity extends Activity {
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 
