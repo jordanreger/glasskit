@@ -1,3 +1,3 @@
-![GlassKit logo](/static/glasskit.png)
+![GlassKit logo](/glasskit.png)
 
 Welcome to GlassKit.
