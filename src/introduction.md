@@ -6,3 +6,5 @@ GlassKit is a free and open source project. The code is on [GitHub](https://gith
 
 ## Questions and Concerns
 If you have any questions or concerns, please send an email to [glasskit@jordanreger.com](mailto:glasskit@jordanreger.com).
+
+View our [GitHub page](https://github.com/GlassKit) or our [Bento box](https://bento.me/glasskit)!
