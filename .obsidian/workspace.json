@@ -4,31 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "1ba473ee621987e4",
+        "id": "c747ac9bf62e82b9",
         "type": "tabs",
         "children": [
           {
-            "id": "3ecc86594c3f6d94",
+            "id": "e9739e00db0cdceb",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "static/glasskit.png"
-              }
-            }
-          },
-          {
-            "id": "fbb8f524c8aa985b",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "glasskit.png"
+                "file": "index.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -94,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "glasskit.png",
+                "file": "index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "glasskit.png",
+                "file": "index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "glasskit.png"
+                "file": "index.md"
               }
             }
           }
@@ -156,11 +147,11 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "c6afb5b5b1e0ac20",
+  "active": "e9739e00db0cdceb",
   "lastOpenFiles": [
-    "index.md",
     "glasskit.png",
     "static/glasskit.png",
+    "index.md",
     "glasskit.png.md",
     "static/index.css",
     "static",
