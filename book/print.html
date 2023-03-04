@@ -341,10 +341,56 @@ Users typically have multiple devices that store and display information for spe
 <h2 id="the-timeline-controls-most-of-the-user-experience"><a class="header" href="#the-timeline-controls-most-of-the-user-experience">The timeline controls most of the user experience</a></h2>
 <p>The timeline is the main user interface that is exposed to users and is comprised of 640 × 360 pixel cards. It provides many features such as a standard way to present live and static cards, system-wide voice commands, and a common way to launch Glassware.</p>
 <p>Users scroll through different sections of the timeline to reveal cards in the past, present, and future. The most recent items reside closest to the Home card, which is the default card users see when they wake Glass up.</p>
-<div class="table-wrapper"><table><thead><tr><th>Settings</th><th></th></tr></thead><tbody>
-<tr><td><img src="archive/design//static/settings-bundle.png" width="50px" /></td><td></td></tr>
+<div class="table-wrapper"><table><thead><tr><th>Settings</th><th></th><th>Present/Future</th><th>Home</th><th>Past</th><th></th><th></th></tr></thead><tbody>
+<tr><td><img src="archive/design/./static/settings-bundle.png" alt="" /></td><td><img src="archive/design/./static/google-now-weather.png" alt="" /></td><td><img src="archive/design/./static/strava-live-card.png" alt="" /></td><td><img src="archive/design/./static/clock_160.png" alt="" /></td><td><img src="archive/design/./static/html_movie_160.png" alt="" /></td><td><img src="archive/design/./static/sms_inbound_160.png" alt="" /></td><td><img src="archive/design/./static/picture_uploading_160.png" alt="" /></td></tr>
 </tbody></table>
-</div><div style="break-before: page; page-break-before: always;"></div><h1 id="patterns"><a class="header" href="#patterns">Patterns</a></h1>
+</div>
+<h2 id="the-timeline-is-organized-into-sections"><a class="header" href="#the-timeline-is-organized-into-sections">The timeline is organized into sections</a></h2>
+<p>Timeline cards appear in the following sections, based on the card's temporality and type.</p>
+<h3 id="home"><a class="header" href="#home">Home</a></h3>
+<p>The default Home card is the Glass clock and it resides in the center of the timeline. For the most part, it appears whenever users wake Glass up.</p>
+<p>It provides system-wide voice and touch commands for users to start other pieces of Glassware. The Glass clock card never leaves the Home area of the timeline because it provides access to the entire Glass system.</p>
+<p><img src="archive/design/./static/clock_160.png" alt="" /></p>
+<h3 id="past"><a class="header" href="#past">Past</a></h3>
+<p>To the right of the Glass clock is the history section, which displays only static cards. This is because live cards are always considered to be in the present, so they never appear here.</p>
+<p>Static cards naturally decay in the past section. As new cards enter the past section, they appear closest to the clock. Glass pushes older cards farther to the right where users rarely scroll and removes cards older than 7 days or when the 200 card limit is reached.</p>
+<div class="table-wrapper"><table><thead><tr><th></th><th></th><th></th><th></th><th></th></tr></thead><tbody>
+<tr><td><img src="archive/design/./static/clock_160.png" alt="" /></td><td><img src="archive/design/./static/html_movie_160.png" alt="" /></td><td><img src="archive/design/./static/sms_inbound_160.png" alt="" /></td><td><img src="archive/design/./static/picture_uploading_160.png" alt="" /></td><td><img src="archive/design/./static/hybrid_bundle_flowers_1_160.png" alt="" /></td></tr>
+</tbody></table>
+</div>
+<h3 id="present-and-future"><a class="header" href="#present-and-future">Present and Future</a></h3>
+<p>To the left of the Glass clock is the present and future section, which contain both static and live cards.</p>
+<p><img src="archive/design/./static/strava-live-card.png" alt="" /></p>
+<p><strong>Figure 1</strong>: Strava Cycling shows a live card that continuously updates the time, distance, and speed of a bike ride as it happens.</p>
+<p>Live cards display information that is relevant to users at the current moment and always appear in this section. When a live card has focus and Glass sleeps, that card becomes the default card that appears when Glass wakes up.</p>
+<p>Static cards that have future timestamps or are &quot;pinned&quot; also appear in the present and future section. Google Now cards are an example of pinned cards that</p>
+<p><img src="archive/design/./static/google-now-weather.png" alt="" /></p>
+<p><strong>Figure 2</strong>: The Google Now weather card shows relevant information automatically.</p>
+<h3 id="settings"><a class="header" href="#settings">Settings</a></h3>
+<p>At the farthest left of the timeline is the Settings bundle, where you can configure system-wide Glass settings, such as volume and Wi-Fi networks.</p>
+<p><img src="archive/design/./static/settings-bundle.png" alt="" /></p>
+<h2 id="live-cards-contain-rich-real-time-content"><a class="header" href="#live-cards-contain-rich-real-time-content">Live cards contain rich, real-time content</a></h2>
+<p>Live cards can update frequently with custom graphics to show users real-time information. This functionality is great for UIs that need to constantly update based on some user data.</p>
+<p>Live cards also have access to low-level sensor data like the accelerometer and GPS, which unlocks new types of user interactions and features that aren't possible with static cards.</p>
+<p><img src="archive/design/./static/compass.png" alt="" /></p>
+<p><strong>Figure 3</strong>: The Compass uses sensors and renders custom graphics to create a unique user experience.</p>
+<p>In addition, live cards run inside the timeline, so users can scroll left and right to view and interact with other cards while the live card is running. This allows users to multitask and seamlessly maintain the live card's running state in the background.</p>
+<p><img src="archive/design/./static/live-card-timeline.png" alt="" /></p>
+<h2 id="static-cards-display-text-images-and-video-content"><a class="header" href="#static-cards-display-text-images-and-video-content">Static cards display text, images, and video content</a></h2>
+<p>Static cards are simple chunks of information that you can build with HTML, text, images, and video. They do not update frequently, if at all, and are designed for quick notifications.</p>
+<div class="table-wrapper"><table><thead><tr><th></th><th></th><th></th></tr></thead><tbody>
+<tr><td><img src="archive/design/./static/dog-gmail.png" alt="" /></td><td><img src="archive/design/./static/picture_uploading_160.png" alt="" /></td><td><img src="archive/design/./static/html_movie_160.png" alt="" /></td></tr>
+</tbody></table>
+</div>
+<h2 id="contacts-allow-users-to-share-content-with-glassware"><a class="header" href="#contacts-allow-users-to-share-content-with-glassware">Contacts allow users to share content with Glassware</a></h2>
+<p>Static cards can have a share menu item that allows users to share the card with people or other Glassware. You can declare your Glassware timeline cards to be shareable and also define a contact for your Glassware that can accept shared timeline items.</p>
+<h2 id="immersions-offer-a-fully-customized-experience"><a class="header" href="#immersions-offer-a-fully-customized-experience">Immersions offer a fully-customized experience</a></h2>
+<p>When you momentarily need full control over the user experience, immersions can run outside of the timeline experience. This allows you to render your own UI and process all of the user input. Immersions are great for Glassware that cannot function within the constraints of the timeline.</p>
+<p><img src="archive/design/./static/user-interface-immersions.png" alt="" /></p>
+<h2 id="menu-items-allow-users-to-carry-out-actions"><a class="header" href="#menu-items-allow-users-to-carry-out-actions">Menu items allow users to carry out actions</a></h2>
+<p>Both cards and immersions can contain menu items that carry out associated actions, such as sharing, replying, dismissing, and much more.</p>
+<p><img src="archive/design/./static/dog-gmail-menu.png" alt="" /></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="patterns"><a class="header" href="#patterns">Patterns</a></h1>
 <p>Use common UX patterns to give users a consistent experience across all Glassware.</p>
 <p>Here you'll learn about the basic building blocks to build these patterns along with examples of patterns that we feel work great on Glass.</p>
 <h2 id="pattern-building-blocks"><a class="header" href="#pattern-building-blocks">Pattern building blocks</a></h2>
