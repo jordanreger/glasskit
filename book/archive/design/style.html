@@ -217,6 +217,15 @@ Timeline cards have 40 pixels of padding on all sides for the text content. This
 <p>When using the <a href="https://developers.google.com/glass/develop/gdk/card-design#text_and_text_fixed"><code>CardBuilder.TEXT</code></a> [<strong>TODO</strong>: ADD LINK] and <a href="https://developers.google.com/glass/develop/gdk/card-design#columns_and_columns_fixed"><code>CardBuilder.COLUMNS</code></a> [<strong>TODO</strong>: ADD LINK] layouts, Glass uses the largest font size possible based on the amount of content. The following cards show examples of the typography characteristics of text based on the amount of text.</p>
 <p><img src="./static/font_32.png" alt="" /></p>
 <p><img src="./static/font_40.png" alt="" /></p>
+<p><img src="./static/font_48.png" alt="" /></p>
+<p><img src="./static/font_64.png" alt="" /></p>
+<h2 id="writing"><a class="header" href="#writing">Writing</a></h2>
+<p>You have limited space for text, so follow these guidelines when writing text for Glassware.</p>
+<p><strong>Keep it brief</strong>. Be concise, simple and precise. Look for alternatives to long text such as reading the content aloud, showing images or video, or removing features.</p>
+<p><strong>Keep it simple</strong>. Pretend you're speaking to someone who's smart and competent, but doesn't know technical jargon and may not speak English very well. Use short words, active verbs, and common nouns.</p>
+<p><strong>Be friendly</strong>. Use contractions. Talk directly to the reader using second person (&quot;you&quot;). If your text doesn't read the way you'd say it in casual conversation, it's probably not the way you should write it.</p>
+<p><strong>Put the most important thing first</strong>. The first two words (around 11 characters, including spaces) should include at least a taste of the most important information in the string. If they don't, start over. Describe only what's necessary, and no more. Don't try to explain subtle differences. They will be lost on most users.</p>
+<p><strong>Avoid repetition</strong>. If a significant term gets repeated within a screen or block of text, find a way to use it just once.</p>
 
                     </main>
 
@@ -241,22 +250,6 @@ Timeline cards have 40 pixels of padding on all sides for the text content. This
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 
