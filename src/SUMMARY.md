@@ -16,7 +16,7 @@
 	- [Style](./archive/design/style.md)
 - [Development Patterns](./archive/develop/patterns/index.md)
 	- [Ongoing Task](./archive/develop/patterns/ongoing-task.md)
-	- [Immersion](./st)
+	- [Immersion](./archive/develop/patterns/immersion.md)
 - [Get Started](./archive/develop/gdk/index.md)
 	- [Quick Start](./archive/develop/gdk/quick-start.md)
 	- [Starting Glassware](./archive/develop/gdk/starting-glassware.md)

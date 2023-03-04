@@ -77,5 +77,4 @@ This pattern describes inserting static cards in the timeline without an invocat
 
 Notifications leverage Mirror API web services or Android background services on Glass to push notifications to the timeline.
 
-![[periodic-notifications-pattern.png]]
-
+![](./static/periodic-notifications-pattern.png)
