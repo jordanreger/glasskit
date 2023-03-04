@@ -82,7 +82,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html">Introduction</a></li><li class="chapter-item expanded affix "><li class="part-title">GlassKit</li><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">1.</strong> Getting Started</a></li><li class="chapter-item expanded "><a href="development/index.html"><strong aria-hidden="true">2.</strong> Developing Glassware</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="development/hello-glass.html"><strong aria-hidden="true">2.1.</strong> Hello Glass tutorial</a></li><li class="chapter-item expanded "><a href="development/gdk/index.html"><strong aria-hidden="true">2.2.</strong> Glass Development Kit</a></li></ol></li><li class="chapter-item expanded "><a href="glassware/index.html"><strong aria-hidden="true">3.</strong> Downloading Glassware</a></li><li class="chapter-item expanded affix "><li class="part-title">Official GDK Archive</li><li class="chapter-item expanded "><a href="archive/index.html"><strong aria-hidden="true">4.</strong> Home</a></li><li class="chapter-item expanded "><a href="archive/design/index.html"><strong aria-hidden="true">5.</strong> Design</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="archive/design/principles.html"><strong aria-hidden="true">5.1.</strong> Principles</a></li><li class="chapter-item expanded "><a href="archive/design/ui.html"><strong aria-hidden="true">5.2.</strong> User Interface</a></li><li class="chapter-item expanded "><a href="archive/design/patterns.html"><strong aria-hidden="true">5.3.</strong> Patterns</a></li><li class="chapter-item expanded "><a href="archive/design/style.html"><strong aria-hidden="true">5.4.</strong> Style</a></li></ol></li><li class="chapter-item expanded "><a href="archive/develop/patterns/index.html"><strong aria-hidden="true">6.</strong> Development Patterns</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="archive/develop/patterns/ongoing-task.html"><strong aria-hidden="true">6.1.</strong> Ongoing Task</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html">Introduction</a></li><li class="chapter-item expanded affix "><li class="part-title">GlassKit</li><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">1.</strong> Getting Started</a></li><li class="chapter-item expanded "><a href="development/index.html"><strong aria-hidden="true">2.</strong> Developing Glassware</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="development/hello-glass.html"><strong aria-hidden="true">2.1.</strong> Hello Glass tutorial</a></li><li class="chapter-item expanded "><a href="development/gdk/index.html"><strong aria-hidden="true">2.2.</strong> Glass Development Kit</a></li></ol></li><li class="chapter-item expanded "><a href="glassware/index.html"><strong aria-hidden="true">3.</strong> Downloading Glassware</a></li><li class="chapter-item expanded affix "><li class="part-title">Official GDK Archive</li><li class="chapter-item expanded "><a href="archive/index.html"><strong aria-hidden="true">4.</strong> Home</a></li><li class="chapter-item expanded "><a href="archive/design/index.html"><strong aria-hidden="true">5.</strong> Design</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="archive/design/principles.html"><strong aria-hidden="true">5.1.</strong> Principles</a></li><li class="chapter-item expanded "><a href="archive/design/ui.html"><strong aria-hidden="true">5.2.</strong> User Interface</a></li><li class="chapter-item expanded "><a href="archive/design/patterns.html"><strong aria-hidden="true">5.3.</strong> Patterns</a></li><li class="chapter-item expanded "><a href="archive/design/style.html"><strong aria-hidden="true">5.4.</strong> Style</a></li></ol></li><li class="chapter-item expanded "><a href="archive/develop/patterns/index.html"><strong aria-hidden="true">6.</strong> Development Patterns</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="archive/develop/patterns/ongoing-task.html"><strong aria-hidden="true">6.1.</strong> Ongoing Task</a></li><li class="chapter-item expanded "><a href="st.html"><strong aria-hidden="true">6.2.</strong> Immersion</a></li></ol></li><li class="chapter-item expanded "><a href="archive/develop/gdk/index.html"><strong aria-hidden="true">7.</strong> Get Started</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="archive/develop/gdk/quick-start.html"><strong aria-hidden="true">7.1.</strong> Quick Start</a></li><li class="chapter-item expanded "><a href="archive/develop/gdk/starting-glassware.html"><strong aria-hidden="true">7.2.</strong> Starting Glassware</a></li><li class="chapter-item expanded "><a href="archive/develop/gdk/permissions.html"><strong aria-hidden="true">7.3.</strong> System Permissions</a></li><li class="chapter-item expanded "><a href="archive/develop/gdk/authentication.html"><strong aria-hidden="true">7.4.</strong> Authentication</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -641,6 +641,430 @@ Timeline cards have 40 pixels of padding on all sides for the text content. This
 <li>The voice command and an intent filter that starts the live card service when the voice command is spoken.</li>
 <li>A version code for the Glassware. This code must be updated (and typically the version name as well) every time a new version of this APK is uploaded to MyGlass.</li>
 </ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="immersion-1"><a class="header" href="#immersion-1">Immersion</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="glass-development-kit-1"><a class="header" href="#glass-development-kit-1">Glass Development Kit</a></h1>
+<p>The Glass Development Kit (GDK) is an add-on to the Android SDK that lets you build Glassware that runs directly on Glass. The guides in this section describe how to use the major APIs in the GDK.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="gdk-quick-start"><a class="header" href="#gdk-quick-start">GDK Quick Start</a></h1>
+<p>Before you begin to use the GDK, you need intermediate or better knowledge in Android development.</p>
+<p>This quick start gets your environment set up with the GDK and shows you how to install your first piece of Glassware. Check out the <a href="archive/develop/gdk/../patterns/index.html">pattern guides</a> for detailed information on how to build Glassware.</p>
+<h2 id="for-android-experts"><a class="header" href="#for-android-experts">For Android experts</a></h2>
+<p>If you're comfortable with Android, here's all you need to know:</p>
+<ol>
+<li>Get the <strong>Android 4.4.2 (API 19) SDK</strong> and <strong>Glass Development Kit Preview</strong> add-on from the Android SDK Manager.</li>
+<li>On Glass, turn on USB debugging (<strong>Settings &gt; Device Info &gt; Turn on debug</strong>).</li>
+<li>Import some <a href="archive/develop/gdk/quick-start.html#importing_samples">GDK samples</a>.</li>
+<li>When you're ready to create a project for your own Glassware, use these settings:
+<ul>
+<li><strong>Compile with: Glass Development Kit Developer Preview</strong></li>
+<li><strong>Theme: None</strong> (ADT and Android Studio usually assign a theme automatically, even if you specify no theme, so remove the <code>android:theme</code> property from your manifest after creating a project.)</li>
+</ul>
+</li>
+<li>Head on over to the <a href="archive/develop/gdk/../patterns/index.html">pattern guides</a> and <a href="archive/develop/gdk/./index.html">developer guides</a> for more learning.</li>
+</ol>
+<p><img src="archive/develop/gdk/./static/studio_glass.png" alt="" /></p>
+<h2 id="for-android-beginners"><a class="header" href="#for-android-beginners">For Android beginners</a></h2>
+<p>We recommend starting with the <a href="https://developer.android.com/training/basics/firstapp/index.html">Building Your First App</a> training class at the <a href="https://developer.android.com/">Android developers site</a> and then building a few simple Android apps before building GDK Glassware.</p>
+<h3 id="setting-up-the-development-environment"><a class="header" href="#setting-up-the-development-environment">Setting up the development environment</a></h3>
+<ol>
+<li>We recommend installing <a href="https://developer.android.com/sdk/installing/studio.html">Android Studio</a> for easier development. The rest of these steps assume you have this installed.</li>
+<li>Click <strong>Configure &gt; SDK Manager</strong>.</li>
+<li>Install the <strong>SDK Platform</strong> and <strong>Glass Development Kit Preview</strong> for <strong>Android 4.4.2 (API 19)</strong>. Everything else is optional.</li>
+<li>On Glass, go to <strong>Settings &gt; Device Info &gt; Turn on debug</strong> to enable <code>adb</code>, which allows your development system to communicate with Glass.</li>
+<li>Connect Glass to your development system and tap on the touchpad to authorize debug access.</li>
+</ol>
+<h3 id="importing-samples"><a class="header" href="#importing-samples">Importing samples</a></h3>
+<p>To help get you started, GDK sample projects are available on our <a href="https://github.com/googleglass">GitHub</a>  [<strong>TODO</strong>: Switch link] repository:</p>
+<ul>
+<li><a href="https://github.com/googleglass/gdk-apidemo-sample">ApiDemo</a> [<strong>TODO</strong>: SWITCH LINK]: Gallery of some GDK APIs usage.</li>
+<li><a href="https://github.com/glasskit/compass">Compass</a>: Simple compass using a <code>LiveCard</code>.</li>
+<li><a href="https://github.com/googleglass/gdk-stopwatch-sample">Stopwatch</a> [<strong>TODO</strong>: SWITCH LINK]: Simple stopwatch using a <code>LiveCard</code>.</li>
+<li><a href="https://github.com/googleglass/gdk-timer-sample">Timer</a> [<strong>TODO</strong>: SWITCH LINK)]: Simple timer using a combination of <code>Immersion</code> and <code>LiveCard</code>.</li>
+</ul>
+<p>To import one of the samples into Android Studio:</p>
+<ol>
+<li>Click <strong>Check out from Version Control &gt; Git</strong>.
+<img src="archive/develop/gdk/./static/studio_checkout_from_git.png" alt="" /></li>
+<li>Use one of the samples' clone URL in the <strong>Vcs Repository URL</strong> field (example: <code>https://github.com/googleglass/gdk-apidemo-sample.git</code>) [<strong>TODO</strong>: SWITCH LINK].</li>
+<li>Click <strong>OK</strong> on the following two screens.</li>
+<li>Build the project and run it on your connected Glass by clicking on the <strong>Play</strong> button. Make sure to check the sample's <code>README</code> for invocation details.</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="starting-glassware"><a class="header" href="#starting-glassware">Starting Glassware</a></h1>
+<p>You can start your own Glassware by declaring a voice command that is associated with your Glassware. Adding a voice command also adds a touch menu if your users choose to tap instead of speak commands.</p>
+<p>You can also start system-provided Glassware, such as navigation or the web browser to carry out certain actions for you, so you don't have to rewrite functionality.</p>
+<h2 id="starting-your-own-glassware"><a class="header" href="#starting-your-own-glassware">Starting your own Glassware</a></h2>
+<p>For information on starting your Glassware from the Home menu (Clock card), see the <a href="https://developers.google.com/glass/develop/gdk/voice">Voice</a> [<strong>TODO</strong>: SWITCH LINK] developer guide.</p>
+<h2 id="starting-speech-recognition"><a class="header" href="#starting-speech-recognition">Starting speech recognition</a></h2>
+<p>For more information on starting the speech recognition Glassware, see the <a href="https://developers.google.com/glass/develop/gdk/voice">Voice</a> [<strong>TODO</strong>: SWITCH LINK] developer guide.</p>
+<h2 id="starting-the-web-browser"><a class="header" href="#starting-the-web-browser">Starting the web browser</a></h2>
+<p>See <a href="https://developer.android.com/guide/components/intents-common.html#Browser">Web Browser</a> [<strong>TODO</strong>: ADD LINK] intents for more information on how to start the Glass web browser.</p>
+<h2 id="starting-settings"><a class="header" href="#starting-settings">Starting settings</a></h2>
+<p>Use the following intents to display the settings card on Glass.</p>
+<p><strong>Action</strong></p>
+<ul>
+<li><a href="https://developer.android.com/reference/android/provider/Settings.html#ACTION_WIFI_SETTINGS"><code>ACTION_WIFI_SETTINGS</code></a></li>
+<li><a href="https://developer.android.com/reference/android/provider/Settings.html#ACTION_BLUETOOTH_SETTINGS"><code>ACTION_BLUETOOTH_SETTINGS</code></a></li>
+<li><a href="https://developer.android.com/reference/android/provider/Settings.html#ACTION_SOUND_SETTINGS"><code>ACTION_SOUND_SETTINGS</code></a></li>
+</ul>
+<p><strong>Example</strong></p>
+<pre><code class="language-java"> startActivity(new Intent(Settings.ACTION_SOUND_SETTINGS));
+</code></pre>
+<h2 id="starting-navigation"><a class="header" href="#starting-navigation">Starting navigation</a></h2>
+<p>Start the built-in Nav Glassware to get turn-by-turn navigation to a location.</p>
+<p><strong>Action</strong></p>
+<p><a href="https://developer.android.com/reference/android/content/Intent.html#ACTION_VIEW"><code>ACTION_VIEW</code></a></p>
+<p><strong>Data URI Scheme</strong></p>
+<p><code>google.navigation:ll=&lt;latitude&gt;,&lt;longitude&gt;&amp;title=&lt;title&gt;&amp;q=&lt;query&gt;&amp;mode=&lt;mode&gt;</code></p>
+<ul>
+<li><code>ll</code> - Coordinates of a location to navigate to. Do not specify <code>query</code> if you specify this.</li>
+<li><code>title</code> - Title to display for the place to navigate to. Defaults to showing the latitude and longitude of the location if you specified those properties or the name of the location if you specified <code>query</code>.</li>
+<li><code>query</code> - A string to query for places to navigate to. Do not specify <code>ll</code> if you specify this.</li>
+<li><code>mode</code> - Defaults to <code>mru</code> if not specified or <code>d</code> if <code>mru</code> does not exist. Possible values are:
+<ul>
+<li><code>d</code> - Driving</li>
+<li><code>w</code> - Walking</li>
+<li><code>b</code> - Bicycle</li>
+<li><code>r</code> - Transit</li>
+<li><code>mru</code> - Most Recently Used.</li>
+</ul>
+</li>
+</ul>
+<p><strong>MIME Type</strong></p>
+<p>None</p>
+<p><strong>Example</strong></p>
+<pre><code class="language-java"> Intent navIntent = new Intent(Intent.ACTION_VIEW,
+    Uri.parse(&quot;google.navigation:ll=37.4219795,
+    -122.0836669&amp;title=Googleplex&quot;));
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="system-permissions"><a class="header" href="#system-permissions">System Permissions</a></h1>
+<p>We recommend minimizing the amount of permissions that your Glassware requests. For more information on using permissions, see <a href="https://developer.android.com/guide/topics/security/permissions.html#permissions">Using Permissions</a>.</p>
+<h2 id="allowed-permissions"><a class="header" href="#allowed-permissions">Allowed permissions</a></h2>
+<ul>
+<li><a href="https://developer.android.com/reference/android/Manifest.permission.html#USE_CREDENTIALS"><code>USE_CREDENTIALS</code></a></li>
+<li><a href="https://developer.android.com/reference/android/Manifest.permission.html#INTERNET"><code>INTERNET</code></a></li>
+<li><a href="https://developer.android.com/reference/android/Manifest.permission.html#ACCESS_NETWORK_STATE"><code>ACCESS_NETWORK_STATE</code></a></li>
+<li><a href="https://developer.android.com/reference/android/Manifest.permission.html#GET_PACKAGE_SIZE"><code>GET_PACKAGE_SIZE</code></a></li>
+<li><a href="https://developer.android.com/reference/android/Manifest.permission.html#ACCESS_WIFI_STATE"><code>ACCESS_WIFI_STATE</code></a></li>
+<li><a href="https://developer.android.com/reference/android/Manifest.permission.html#MODIFY_AUDIO_SETTINGS"><code>MODIFY_AUDIO_SETTINGS</code></a></li>
+<li><a href="https://developer.android.com/reference/android/Manifest.permission.html#RESTART_PACKAGES"><code>RESTART_PACKAGES</code></a></li>
+<li><a href="https://developer.android.com/reference/android/Manifest.permission.html#KILL_BACKGROUND_PROCESSES"><code>KILL_BACKGROUND_PROCESSES</code></a></li>
+<li><a href="https://developer.android.com/reference/android/Manifest.permission.html#ACCESS_LOCATION_EXTRA_COMMANDS"><code>ACCESS_LOCATION_EXTRA_COMMANDS</code></a></li>
+<li><a href="https://developer.android.com/reference/android/Manifest.permission.html#BROADCAST_STICKY"><code>BROADCAST_STICKY</code></a></li>
+<li><a href="https://developer.android.com/reference/android/Manifest.permission.html#READ_SYNC_SETTINGS"><code>READ_SYNC_SETTINGS</code></a></li>
+<li><a href="https://developer.android.com/reference/android/Manifest.permission.html#READ_SYNC_STATS"><code>READ_SYNC_STATS</code></a></li>
+</ul>
+<h2 id="use-only-when-necessary"><a class="header" href="#use-only-when-necessary">Use only when necessary</a></h2>
+<ul>
+<li><a href="https://developer.android.com/reference/android/Manifest.permission.html#BLUETOOTH"><code>BLUETOOTH</code></a></li>
+<li><a href="https://developer.android.com/reference/android/Manifest.permission.html#BLUETOOTH_ADMIN"><code>BLUETOOTH_ADMIN</code></a></li>
+<li><a href="https://developer.android.com/reference/android/Manifest.permission.html#GET_ACCOUNTS"><code>GET_ACCOUNTS</code></a></li>
+<li><a href="https://developer.android.com/reference/android/Manifest.permission.html#AUTHENTICATE_ACCOUNTS"><code>AUTHENTICATE_ACCOUNTS</code></a></li>
+<li><a href="https://developer.android.com/reference/android/Manifest.permission.html#MANAGE_ACCOUNTS"><code>MANAGE_ACCOUNTS</code></a></li>
+<li><a href="https://developer.android.com/reference/android/Manifest.permission.html#GET_TASKS"><code>GET_TASKS</code></a></li>
+<li><a href="https://developer.android.com/reference/android/Manifest.permission.html#REORDER_TASKS"><code>REORDER_TASKS</code></a></li>
+<li><a href="https://developer.android.com/reference/android/Manifest.permission.html#PERSISTENT_ACTIVITY"><code>PERSISTENT_ACTIVITY</code></a></li>
+<li><a href="https://developer.android.com/reference/android/Manifest.permission.html#RECEIVE_BOOT_COMPLETED"><code>RECEIVE_BOOT_COMPLETED</code></a></li>
+<li><a href="https://developer.android.com/reference/android/Manifest.permission.html#WRITE_APN_SETTINGS"><code>WRITE_APN_SETTINGS</code></a></li>
+<li><a href="https://developer.android.com/reference/android/Manifest.permission.html#WAKE_LOCK"><code>WAKE_LOCK</code></a></li>
+<li><a href="https://developer.android.com/reference/android/Manifest.permission.html#CHANGE_NETWORK_STATE"><code>CHANGE_NETWORK_STATE</code></a></li>
+<li><a href="https://developer.android.com/reference/android/Manifest.permission.html#CHANGE_WIFI_STATE"><code>CHANGE_WIFI_STATE</code></a></li>
+<li><a href="https://developer.android.com/reference/android/Manifest.permission.html#CHANGE_WIFI_MULTICAST_STATE"><code>CHANGE_WIFI_MULTICAST_STATE</code></a></li>
+<li><a href="https://developer.android.com/reference/android/Manifest.permission.html#WRITE_EXTERNAL_STORAGE"><code>WRITE_EXTERNAL_STORAGE</code></a></li>
+</ul>
+<h2 id="requires-user-consent"><a class="header" href="#requires-user-consent">Requires user consent</a></h2>
+<ul>
+<li><a href="https://developer.android.com/reference/android/Manifest.permission.html#RECORD_AUDIO"><code>RECORD_AUDIO</code></a></li>
+<li><a href="https://developer.android.com/reference/android/Manifest.permission.html#CAMERA"><code>CAMERA</code></a></li>
+<li><a href="https://developer.android.com/reference/android/Manifest.permission.html#ACCESS_FINE_LOCATION"><code>ACCESS_FINE_LOCATION</code></a></li>
+<li><a href="https://developer.android.com/reference/android/Manifest.permission.html#ACCESS_COARSE_LOCATION"><code>ACCESS_COARSE_LOCATION</code></a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="authentication-for-gdk-glassware"><a class="header" href="#authentication-for-gdk-glassware">Authentication for GDK Glassware</a></h1>
+<p>If your GDK Glassware needs to authenticate users against a web service, the GDK provides an API that lets the user enter their credentials when they install your Glassware.</p>
+<p>By using this API, you provide a consistent user experience for Glass users and avoid the overhead of implementing your own custom authentication schemes.</p>
+<blockquote>
+<p><strong>Note</strong>: Currently, you can only test and use this API after we've uploaded your APK to MyGlass, which happens during the review process.</p>
+</blockquote>
+<h2 id="creating-a-google-api-service-account"><a class="header" href="#creating-a-google-api-service-account">Creating a Google API service account</a></h2>
+<p>When authentication is set up correctly, your web app's back end uses the Mirror API to push users' account information to Glass after they authenticate with your service.</p>
+<p>In order to access this API, create a Google API project and then create a client ID for a &quot;service account&quot; (and <strong>not</strong> a &quot;web application&quot;). By using a service account, users do not have to separately grant your application permission to push their credentials to Glass and won't be presented with both the OAuth permissions page and your own authentication page again.</p>
+<p>To create this account:</p>
+<ol>
+<li>Go to the <a href="https://cloud.google.com/console">Google Developers Console</a>.</li>
+<li>Click the <strong>Create Project</strong> button and enter the requested information.</li>
+<li>Once your project is created, make a note of the <strong>Project Number</strong>, which you will need later.</li>
+<li>Under <strong>APIs &amp; auth</strong>, click <strong>APIs</strong> and enable the <strong>Google Mirror API</strong> for your new project.</li>
+<li>Under <strong>APIs &amp; auth</strong>, click <strong>Credentials</strong>, then click <strong>Create New Client ID.</strong> Check the box labeled <strong>Service account</strong> to create a new OAuth 2.0 client ID for the project.</li>
+<li>A popup window will inform you that the private key is being downloaded to your computer and provides you with the password for that private key. <strong>Once you close this window, you will not be able to download this private key or see the password again. If they are ever lost, you must create a new one.</strong></li>
+<li>Make a note of the service account's e-mail address, which you will need later to make the API call.</li>
+</ol>
+<h2 id="providing-metadata-about-your-glassware"><a class="header" href="#providing-metadata-about-your-glassware">Providing metadata about your Glassware</a></h2>
+<p>When you are ready to submit your Glassware, you will need to provide the following information. This allows us to set up your Glassware to be authenticated correctly when you implement it.</p>
+<ul>
+<li>Your <strong>authentication URL</strong>, which users are redirected to when they turn on your Glassware in MyGlass.</li>
+<li>The <strong>account type</strong> (the string you will be using when you call the Android <code>AccountManager</code> APIs on the Glass device)</li>
+<li>The <strong>package name</strong> of your application from your <code>AndroidManifest.xml</code></li>
+<li>The <strong>numeric Google API project ID</strong> of the project that you created above</li>
+<li>The <strong>APK</strong> to upload on MyGlass. For testing, you only need to provide this APK once to handle the initial download when your Glassware is turned on from MyGlass; after that, you can iterate and debug locally by overwriting the APK on your device. Note that this APK needs to meet the following criteria:
+<ul>
+<li>It must be zip-aligned.</li>
+<li>You must not make any changes to the package name or private signing key after this (the Android package manager does not allow upgrades if either of these changes).</li>
+<li>It must be smaller than 50 megabytes.</li>
+<li>It must be compiled using the latest version of the GDK.</li>
+</ul>
+</li>
+</ul>
+<h2 id="implementing-the-authentication-flow"><a class="header" href="#implementing-the-authentication-flow">Implementing the authentication flow</a></h2>
+<p>The following diagram shows the basic authentication flow for GDK Glassware:</p>
+<p><img src="archive/develop/gdk/./static/gdk-auth.png" alt="" /></p>
+<p>To implement the authentication flow:</p>
+<ol>
+<li>When users turn on your Glassware in MyGlass, they are redirected to your authentication URL. These requests include a query parameter named <code>userToken</code> that you need to use later.</li>
+</ol>
+<blockquote>
+<p><strong>Warning</strong>: Do not store this user token. It is only for use by Google's authentication endpoints to map the request back to the originated user during that session only and does not contain any information that can be used to persistently identify the user. The token is not guaranteed to be the same if the user authenticates with the same Glassware multiple times or if the user authenticates with different Glassware from the same developer.</p>
+</blockquote>
+<ol start="2">
+<li>The user enters their credentials on your authentication page.</li>
+<li>Your server validates the user's credentials. If the credentials are valid, make a Mirror API call to the <code>mirror.accounts.insert</code> method. This method requires that you specify the <code>https://www.googleapis.com/auth/glass.thirdpartyauth</code> scope when you build your Mirror service object. Examples of making this API call using either raw HTTP or Java are shown in the <a href="archive/develop/gdk/authentication.html#account_creation_examples">account creation examples</a>. The parameters and request body that you provide below represent the same information that you would provide to Android's <code>AccountManager</code> if you were creating the account directly on the device.</li>
+</ol>
+<div class="table-wrapper"><table><thead><tr><th>Property name</th><th>Value</th><th>Description</th></tr></thead><tbody>
+<tr><td><code>features[]</code></td><td>list of strings</td><td>A list of features (see <a href="https://developer.android.com/reference/android/accounts/AccountManager.html#hasFeatures(android.accounts.Account,%20java.lang.String%5B%5D,%20android.accounts.AccountManagerCallback%3Cjava.lang.Boolean%3E,%20android.os.Handler)"><code>AccountManager.hasFeatures</code></a>).</td></tr>
+<tr><td><code>password</code></td><td>string</td><td>The account password (see <a href="https://developer.android.com/reference/android/accounts/AccountManager.html#getPassword(android.accounts.Account)"><code>AccountManager.getPassword</code></a>). We recommend that you <strong>not</strong> store the user's actual password in this field, but instead use it to store long-lived private data like a refresh token.</td></tr>
+<tr><td><code>userData[]</code></td><td>list of objects</td><td>One or more pairs of user data associated with the account (see <a href="https://developer.android.com/reference/android/accounts/AccountManager.html#getUserData(android.accounts.Account,%20java.lang.String)"><code>AccountManager.getUserData</code></a>).</td></tr>
+<tr><td><code>userData[].key</code></td><td>string</td><td>The key associated with a particular user data key-value pair.</td></tr>
+<tr><td><code>userData[].value</code></td><td>string</td><td>The value associated with a particular user data key-value pair.</td></tr>
+<tr><td><code>authTokens[]</code></td><td>list of objects</td><td>One or more auth tokens associated with the account (see <a href="https://developer.android.com/reference/android/accounts/AccountManager.html#getAuthToken(android.accounts.Account,%20java.lang.String,%20android.os.Bundle,%20boolean,%20android.accounts.AccountManagerCallback%3Candroid.os.Bundle%3E,%20android.os.Handler)"><code>AccountManager.getAuthToken</code></a>).</td></tr>
+<tr><td><code>authTokens[].type</code></td><td>string</td><td>The type of the auth token.</td></tr>
+<tr><td><code>authTokens[].authToken</code></td><td>string</td><td>The auth token.</td></tr>
+</tbody></table>
+</div>
+<ol start="4">
+<li>Upon receiving the <code>mirror.account.insert</code> request, the Mirror API pushes the account to the user's Glass device(s), where you can now access it using the <a href="https://developer.android.com/reference/android/accounts/AccountManager.html"><code>AccountManager</code></a> class.</li>
+</ol>
+<h3 id="recommended-authentication-flows"><a class="header" href="#recommended-authentication-flows">Recommended authentication flows</a></h3>
+<p>Follow these guidelines to implement a user-friendly authentication flow:</p>
+<ul>
+<li>Optimize your flow for mobile devices.</li>
+<li>If your flow has a scope and the user cancels them, have a well-designed error message.</li>
+<li>Ensure the scopes that you request are actually being used in your Glassware.</li>
+<li>If a user account can be connected, ensure that you connect it.</li>
+<li>Where possible, user data should back up to the cloud.</li>
+</ul>
+<blockquote>
+<p><strong>Note</strong>: Install your Glassware at least once through MyGlass to ensure that your authentication flow is successful. As long as you've done this once, you can install via sideloading for testing purposes.</p>
+</blockquote>
+<p>To maintain consistency in Glassware authentication, use one of the following authentication flows:</p>
+<h4 id="mirror-or-hybrid-without-an-account"><a class="header" href="#mirror-or-hybrid-without-an-account">Mirror or hybrid without an account</a></h4>
+<ol>
+<li>After toggling on in MyGlass, your authentication URL opens in a pop-up.</li>
+<li>This directly sends the user to scopes to accept.</li>
+<li>After the user accepts or cancels the scopes, close the pop-up.</li>
+</ol>
+<h4 id="mirror-with-an-account"><a class="header" href="#mirror-with-an-account">Mirror with an account</a></h4>
+<ol>
+<li>After toggling on in MyGlass, your authentication URL opens in a pop-up.
+<ul>
+<li>If the user is already signed in to your service, send the user directly to scopes.</li>
+<li>If the user is not signed in, show the sign-in fields, allow them to sign in to your service, and then send them to scopes.</li>
+<li>If the user does not have an account, provide a link to create an account. Users must have a way to create an account as part of the install flow process.</li>
+</ul>
+</li>
+<li>User accepts scopes.
+<ul>
+<li>If your Glassware has configurable settings, send the user to the settings page with reasonable defaults selected.</li>
+<li>If your Glassware does not have configurable settings, send the user to a confirmation page. Close the pop-up if no additional configuration is required.</li>
+</ul>
+</li>
+</ol>
+<h4 id="hybrid-with-an-account"><a class="header" href="#hybrid-with-an-account">Hybrid with an account</a></h4>
+<ol>
+<li>After toggling on in MyGlass, your authentication URL opens in a pop-up.
+<ul>
+<li>If the user is already signed in to your service, send the user directly to scopes.</li>
+<li>If the user is not signed in, show sign in fields, allow them to sign in, and then send them to scopes.</li>
+<li>If the user does not have an account, provide a link to create an account.</li>
+</ul>
+</li>
+<li>User accepts scopes.</li>
+<li>Send a request to the Mirror API to insert the GDK Account.
+<ul>
+<li>Send the user to the settings page with reasonable defaults selected.</li>
+<li>Send the user a confirmation page. Close the pop-up if no additional configuration is required.</li>
+</ul>
+</li>
+</ol>
+<h4 id="mirror-or-hybrid-with-an-account-and-custom-scopes"><a class="header" href="#mirror-or-hybrid-with-an-account-and-custom-scopes">Mirror or hybrid with an account and custom scopes</a></h4>
+<ol>
+<li>After toggling on in MyGlass, your authentication URL opens in a pop-up.
+<ul>
+<li>If the user is already signed in to your service, send user to your internal scopes</li>
+<li>If the user is not signed in, show sign in fields, allow them to sign in, and then send them to your internal scopes</li>
+<li>If the user does not have an account, provide a link to create an account.</li>
+</ul>
+</li>
+<li>When the user accepts your custom scopes, send user to Google's scopes.</li>
+<li>Send a request to the Mirror API to insert the GDK Account.
+<ul>
+<li>Send the user to the settings page with reasonable defaults selected.</li>
+<li>Send the user a confirmation page. Close the pop-up if no additional configuration is required.</li>
+</ul>
+</li>
+</ol>
+<h4 id="mirror-or-hybrid-with-an-androidiphone-app"><a class="header" href="#mirror-or-hybrid-with-an-androidiphone-app">Mirror or hybrid with an Android/iPhone app</a></h4>
+<ol>
+<li>After toggling on in MyGlass, your authentication URL opens in a pop-up.</li>
+<li>This directly sends the user to scopes to accept.</li>
+<li>After the user accepts scopes:
+<ul>
+<li>If the user has the companion app and is authenticated, close the pop-up window.</li>
+<li>If not, send the user to an interstitial that directs them to download the app from the Google Play store or iOS store</li>
+</ul>
+</li>
+<li>After installing the app and authenticating, close the pop-up window</li>
+</ol>
+<h4 id="gdk-and-no-account"><a class="header" href="#gdk-and-no-account">GDK and no account</a></h4>
+<p>Toggling the Glassware on in MyGlass is all that is required for this flow.</p>
+<h4 id="gdk-with-an-account"><a class="header" href="#gdk-with-an-account">GDK with an account</a></h4>
+<ol>
+<li>After toggling on in MyGlass, your authentication URL opens in a pop-up.
+<ul>
+<li>If the user is already signed in to your service, send the user to the confirmation screen.</li>
+<li>If the user is not signed in, display the sign in fields, allow them to sign in, and then send them to the confirmation screen.</li>
+<li>If the user does not have an account, provide a link to create an account.</li>
+</ul>
+</li>
+<li>User accepts scopes.</li>
+<li>Send a request to the Mirror API to insert the GDK Account.</li>
+<li>Show the confirmation screen, and close the screen after showing it for a short period of time.</li>
+</ol>
+<h3 id="account-creation-examples"><a class="header" href="#account-creation-examples">Account creation examples</a></h3>
+<p>Use the <a href="https://developers.google.com/glass/tools-downloads/client-libraries">client libraries</a> [<strong>TODO</strong>: ADD LINK] for the Mirror API when possible. This makes calling <code>mirror.accounts.insert</code> to create the account easier.</p>
+<h4 id="raw-http-example"><a class="header" href="#raw-http-example">Raw HTTP example</a></h4>
+<p>The example below only shows the URL of the request and an example of the JSON body that it expects. Making raw HTTP requests on behalf of a service account is much more complicated (see <a href="https://developers.google.com/accounts/docs/OAuth2ServiceAccount">Using OAuth 2.0 for Server to Server Applications</a> for the full details), so we recommend that you use one of our Google API <a href="https://developers.google.com/glass/tools-downloads/client-libraries">client libraries</a> [<strong>TODO</strong>: ADD LINK] if possible to make this easier.</p>
+<p>Request method and URL:</p>
+<pre><code>POST https://www.googleapis.com/mirror/v1/accounts/{userToken}/com.example.myapp/username%40email.com
+</code></pre>
+<p>Request body:</p>
+<pre><code class="language-json">{
+    &quot;features&quot;: [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;],
+    &quot;userData&quot;: [
+        { &quot;key&quot;: &quot;realName&quot;, &quot;value&quot;: &quot;Rusty Shackleford&quot; },
+        { &quot;key&quot;: &quot;foo&quot;, &quot;value&quot;: &quot;bar&quot; }
+    ],
+    &quot;authTokens&quot;: [
+        { &quot;type&quot;: &quot;your_token_type&quot;, &quot;authToken&quot;: &quot;zT419Ma3X2pBr0L...&quot; }
+    ]
+}
+</code></pre>
+<p>Replace <code>{userToken}</code> in the request URL with the token that was passed to your authentication URL in step 1 of <a href="archive/develop/gdk/authentication.html#implementing_the_authentication_flow">Implementing the authentication flow</a>.</p>
+<h4 id="java-example"><a class="header" href="#java-example">Java Example</a></h4>
+<p>This example shows how to use the Java client library to call <code>mirror.accounts.insert</code></p>
+<pre><code class="language-java">import com.google.api.client.googleapis.auth.oauth2.GoogleCredential;
+import com.google.api.client.http.HttpTransport;
+import com.google.api.client.http.javanet.NetHttpTransport;
+import com.google.api.client.json.JsonFactory;
+import com.google.api.client.json.jackson.JacksonFactory;
+import com.google.api.services.mirror.Mirror;
+import com.google.api.services.mirror.model.Account;
+import com.google.api.services.mirror.model.AuthToken;
+import com.google.common.collect.Lists;
+...
+
+/** Email of the Service Account */
+private static final String SERVICE_ACCOUNT_EMAIL =
+    &quot;&lt;some-id&gt;@developer.gserviceaccount.com&quot;;
+
+/** Path to the Service Account's Private Key file */
+private static final String SERVICE_ACCOUNT_PKCS12_FILE_PATH =
+    &quot;/path/to/&lt;public_key_fingerprint&gt;-privatekey.p12&quot;;
+
+/** The account type, usually based on your company or app's package. */
+private static final String ACCOUNT_TYPE = &quot;com.example.myapp&quot;;
+
+/** The Mirror API scopes needed to access the API. */
+private static final String MIRROR_ACCOUNT_SCOPES =
+    &quot;https://www.googleapis.com/auth/glass.thirdpartyauth&quot;;
+
+/**
+ * Build and returns a Mirror service object authorized with the service accounts.
+ *
+ * @return Mirror service object that is ready to make requests.
+ */
+public static Mirror getMirrorService() throws GeneralSecurityException,
+    IOException, URISyntaxException {
+  HttpTransport httpTransport = new NetHttpTransport();
+  JacksonFactory jsonFactory = new JacksonFactory();
+  GoogleCredential credential = new GoogleCredential.Builder()
+      .setTransport(httpTransport)
+      .setJsonFactory(jsonFactory)
+      .setServiceAccountId(SERVICE_ACCOUNT_EMAIL)
+      .setServiceAccountScopes(MIRROR_ACCOUNT_SCOPES)
+      .setServiceAccountPrivateKeyFromP12File(
+          new java.io.File(SERVICE_ACCOUNT_PKCS12_FILE_PATH))
+      .build();
+  Mirror service = new Mirror.Builder(httpTransport, jsonFactory, null)
+      .setHttpRequestInitializer(credential).build();
+  return service;
+}
+
+/**
+ * Creates an account and causes it to be synced up with the user's Glass.
+ * This example only supports one auth token; modify it if you need to add
+ * more than one, or to add features, user data, or the password field.
+ *
+ * @param mirror the service returned by getMirrorService()
+ * @param userToken the user token sent to your auth callback URL
+ * @param accountName the account name for this particular user
+ * @param authTokenType the type of the auth token (chosen by you)
+ * @param authToken the auth token
+ */
+public static void createAccount(Mirror mirror, String userToken, String accountName,
+    String authTokenType, String authToken) {
+  try {
+    Account account = new Account();
+    List&lt;AuthToken&gt; authTokens = Lists.newArrayList(
+        new AuthToken().setType(authTokenType).setAuthToken(authToken));
+    account.setAuthTokens(authTokens);
+    mirror.accounts().insert(
+        userToken, ACCOUNT_TYPE, accountName, account).execute();
+  } catch (IOException e) {
+    e.printStackTrace();
+  }
+}
+</code></pre>
+<h2 id="retrieving-accounts-on-glass"><a class="header" href="#retrieving-accounts-on-glass">Retrieving Accounts on Glass</a></h2>
+<p>Retrieving and using <a href="https://developer.android.com/reference/android/accounts/Account.html"><code>Account</code></a> objects on Glass is similar to using the standard Android <a href="https://developer.android.com/reference/android/accounts/AccountManager.html"><code>AccountManager</code></a>.</p>
+<ol>
+<li>Declare the following manifest permissions in your <code>AndroidManifest.xml</code> file:</li>
+</ol>
+<pre><code class="language-xml">&lt;uses-permission android:name=&quot;android.permission.GET_ACCOUNTS&quot; /&gt;
+&lt;uses-permission android:name=&quot;android.permission.USE_CREDENTIALS&quot; /&gt;
+</code></pre>
+<ol start="2">
+<li>Retrieve the Glassware's accounts:</li>
+</ol>
+<pre><code class="language-java">AccountManager accountManager = AccountManager.get(mContext);
+// Use your Glassware's account type.
+Account[] accounts = accountManager.getAccountsByType(&quot;com.example&quot;);
+
+// Pick an account from the list of returned accounts.
+</code></pre>
+<ol start="3">
+<li>Retrieve an auth token from the <code>Account</code>:</li>
+</ol>
+<pre><code class="language-java">// Your auth token type.
+final String AUTH_TOKEN_TYPE = &quot;oauth2:https://www.example.com/auth/login&quot;;
+
+accountManager.getAuthToken(account, AUTH_TOKEN_TYPE, null, activity, new AccountManagerCallback&lt;Bundle&gt;() {
+    public void run(AccountManagerFuture&lt;Bundle&gt; future) {
+        try {
+            String token = future.getResult().getString(AccountManager.KEY_AUTHTOKEN);
+            // Use the token.
+        } catch (Exception e) {
+            // Handle exception.
+        }
+    }
+}, null);
+</code></pre>
 
                     </main>
 
