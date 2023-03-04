@@ -81,7 +81,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html" class="active">Introduction</a></li><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">1.</strong> Getting Started</a></li><li class="chapter-item expanded "><a href="development/index.html"><strong aria-hidden="true">2.</strong> Developing Glassware</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="development/hello-glass.html"><strong aria-hidden="true">2.1.</strong> Hello Glass tutorial</a></li><li class="chapter-item expanded "><a href="development/gdk.html"><strong aria-hidden="true">2.2.</strong> Glass Development Kit</a></li></ol></li><li class="chapter-item expanded "><a href="glassware/index.html"><strong aria-hidden="true">3.</strong> Downloading Glassware</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html" class="active">Introduction</a></li><li class="chapter-item expanded affix "><li class="part-title">GlassKit</li><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">1.</strong> Getting Started</a></li><li class="chapter-item expanded "><a href="development/index.html"><strong aria-hidden="true">2.</strong> Developing Glassware</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="development/hello-glass.html"><strong aria-hidden="true">2.1.</strong> Hello Glass tutorial</a></li><li class="chapter-item expanded "><a href="development/gdk/index.html"><strong aria-hidden="true">2.2.</strong> Glass Development Kit</a></li></ol></li><li class="chapter-item expanded "><a href="glassware/index.html"><strong aria-hidden="true">3.</strong> Downloading Glassware</a></li><li class="chapter-item expanded affix "><li class="part-title">Official GDK Archive</li><li class="chapter-item expanded "><a href="archive/index.html"><strong aria-hidden="true">4.</strong> Home</a></li><li class="chapter-item expanded "><a href="archive/design/index.html"><strong aria-hidden="true">5.</strong> Design</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="archive/design/principles.html"><strong aria-hidden="true">5.1.</strong> Principles</a></li><li class="chapter-item expanded "><a href="archive/design/ui.html"><strong aria-hidden="true">5.2.</strong> User Interface</a></li><li class="chapter-item expanded "><a href="archive/design/patterns.html"><strong aria-hidden="true">5.3.</strong> Patterns</a></li><li class="chapter-item expanded "><a href="archive/design/style.html"><strong aria-hidden="true">5.4.</strong> Style</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -154,6 +154,7 @@
 <p>GlassKit is a free and open source project. The code is on <a href="https://github.com/GlassKit">GitHub</a>, as well as issues and feature requests.</p>
 <h2 id="questions-and-concerns"><a class="header" href="#questions-and-concerns">Questions and Concerns</a></h2>
 <p>If you have any questions or concerns, please send an email to <a href="mailto:glasskit@jordanreger.com">glasskit@jordanreger.com</a>.</p>
+<p>View our <a href="https://github.com/GlassKit">GitHub page</a> or our <a href="https://bento.me/glasskit">Bento box</a>!</p>
 
                     </main>
 
@@ -178,6 +179,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 
