@@ -80,6 +80,11 @@ Static cards are simple chunks of information that you can build with HTML, text
 
 Static cards can have a share menu item that allows users to share the card with people or other Glassware. You can declare your Glassware timeline cards to be shareable and also define a contact for your Glassware that can accept shared timeline items.
 
+| | | |
+| --- | --- | --- |
+| ![](./static/hybrid_bundle_flowers_1_160.png) | ![](./static/contact_friends_gplus_320.jpg) |
+
+
 ## Immersions offer a fully-customized experience
 
 When you momentarily need full control over the user experience, immersions can run outside of the timeline experience. This allows you to render your own UI and process all of the user input. Immersions are great for Glassware that cannot function within the constraints of the timeline.
