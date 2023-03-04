@@ -14,3 +14,4 @@
 	- [User Interface](./archive/design/ui.md)
 	- [Patterns](./archive/design/patterns.md)
 	- [Style](./archive/design/style.md)
+- [Development Patterns](./archive/develop/patterns/index.md)
