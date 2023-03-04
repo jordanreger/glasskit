@@ -110,3 +110,47 @@ The following files are associated with the countdown view:
 -   `res/layout/card_countdown.xml` - Defines the layout for the countdown viewer
 -   `src/com/google/android/glass/sample/stopwatch/CountDownView.java` [**TODO**: SWITCH LINK] - Defines the view for the countdown.
 
+### Chronometer view
+
+This is the main view of the Stopwatch. It displays the elapsed time since the countdown interstitial completes. The following files are associated with the chronometer view:
+
+-   `res/layout/card_chronometer.xml` - Defines the layout for the stopwatch view
+-   `src/com/google/android/glass/sample/stopwatch/ChronometerDrawer.java` - Defines how to render the view. The live card service calls this class to draw to the live card service.
+-   `src/com/google/android/glass/sample/stopwatch/ChronometerView.java` - The stopwatch view that uses the previous layout as it's UI.
+
+![](./static/stopwatch_640.png)
+
+### Stopwatch service
+
+This is the service that manages the live card's lifecycle and rendering. The following files are associated with this service:
+
+-   `src/com/google/android/glass/sample/stopwatch/StopwatchService.java` - Manages the stopwatch live card and handles the service lifecycle.
+
+### Menu Activity
+
+Live cards do not have their own UI context to display a menu in because they render their UIs in the context of the timeline.
+
+To get around this limitation, you create a translucent activity that appears on top of the timeline and then display that activity's menu immediately after users tap on the live card.
+
+> **Distributing Tip**:
+> 
+> All menu items must have a corresponding 50 × 50 white-on-transparent icon associated with them. This is required to launch on MyGlass.
+> 
+> In addition, all live cards must have a **Stop** menu item that lets users remove the live card from the timeline.
+> 
+> We provide [standard icons](./static/menu_icons.zip) you can use if they work for you.
+
+![](./static/stop-stopwatch.png)
+
+-   `src/com/google/android/glass/sample/stopwatch/MenuActivity.java` - Declares the translucent menu activity that immediately shows the menu when the activity is visible.
+-   `res/values/styles.xml` - Defines the translucent style that is applied to the menu.
+-   `res/menu/stopwatch.xml` - The menu resource that contains the mandatory **Stop** menu item.
+
+## Android Manifest
+
+The `AndroidManifest.xml` file describes the major components of your Glassware so the system knows how to run it. The manifest for Charades declares the following things:
+
+-   The Glassware's icon and name. Glass displays this information on the main touch menu if more than one Glassware responds to the same voice command.
+-   All of the services and activities associated with the Stopwatch. This is required for the system to know how to start your Glassware's components.
+-   The voice command and an intent filter that starts the live card service when the voice command is spoken.
+-   A version code for the Glassware. This code must be updated (and typically the version name as well) every time a new version of this APK is uploaded to MyGlass.

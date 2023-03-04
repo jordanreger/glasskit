@@ -15,3 +15,4 @@
 	- [Patterns](./archive/design/patterns.md)
 	- [Style](./archive/design/style.md)
 - [Development Patterns](./archive/develop/patterns/index.md)
+	- [Ongoing Task](./archive/develop/patterns/ongoing-task.md)
