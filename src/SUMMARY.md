@@ -22,3 +22,7 @@
 	- [Starting Glassware](./archive/develop/gdk/starting-glassware.md)
 	- [System Permissions](./archive/develop/gdk/permissions.md)
 	- [Authentication](./archive/develop/gdk/authentication.md)
+- [User Interface](./archive/develop/gdk/index.md)
+	- [Notification Sync](./archive/develop/notification-sync.md)
+	- [Live Cards](./archive/develop/live-cards.md)
+<!-- Immersions -->
