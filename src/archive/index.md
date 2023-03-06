@@ -1,45 +1,19 @@
-# Glass Explorer Edition
-Build Glassware that is available at a user's glance on Glass. [Developer overview](./develop/overview.md)
+# GDK Documentation Archive
 
-## Design before you develop
-Understand our design principles and patterns before you write a line of code. When you start coding, follow Glass patterns and style, when appropriate, to give users a consistent user experience.
+Welcome to the *un*official official GDK documentation archive. This archive may be full of broken links, content errors, etc., but it's simply here to be a backup just in case Google ever gets rid of the [official GDK documentation](https://developers.google.com/glass). If you do happen to find a broken link, content error, or something else, please [submit an issue](https://github.com/GlassKit/website/issues)!
 
-### [Learn the design principles](./design/principles.md)
-These principles describe the core of a great Glass experience, so apply them when designing and building.
+## License
 
-### [Choose a design pattern](./design/patterns.md)
-We've come up with a few patterns that work well on Glass. Use them to create consistent experiences.
+Just as the official GDK documentation is, all content in this archive (along with the whole site), unless otherwise stated, is licensed by the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and the code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). The GlassKit team does not own any of the content on the pages in the archive. Portions of this page are reproduced from work created and [shared by Google](https://developers.google.com/readme/policies) and used according to terms described in the [Creative Commons 4.0 Attribution License](https://creativecommons.org/licenses/by/4.0/).
 
-### [Use Glass style and templates](./design/style.md)
-Use the provided UI guidelines and templates to help you design and build Glassware correctly.
+### Attribution
 
-### Use the Glassware Flow Designer (not available)
-Collaboratively design in our web-based tool to visualize your Glassware flow and get early design feedback from the review team.
+You will find this paragraph at the bottom of every page in this archive, as to attribute the content to Google:
 
-## Develop with Android-based APIs
-The Glass development platform lets you write Android code that runs directly on Glass.
+```
+Portions of this page are reproduced from work created and [shared by Google](https://developers.google.com/readme/policies) and used according to terms described in the [Creative Commons 4.0 Attribution License](https://creativecommons.org/licenses/by/4.0/).
+```
 
-### [Build a pattern](./develop/patterns.md)
-Learn how to build some design patterns with end-to-end guides.
+Read more: https://developers.google.com/terms/site-policies#restrictions
 
-### [Explore the API docs](./develop/gdk/reference.md)
-See all of the GDK features in the API reference docs.
-
-### [Learn with samples](./samples.md)
-Get working Glassware and code snippets from the guides and samples.
-
-### [Tools and Downloads](./tools-downloads.md)
-Get the right tools and resources you need to build Glassware.
-
-## Distribute to Glass users
-Before you share your Glassware APKs, make sure you follow these best practices and guidelines.
-
-### [Follow these best practices](./distribute/best-practices.md)
-Make sure you follow our best practices to ensure your Glassware runs smoothly.
-
-### [Complete the launch guidelines](./distribute/checklist.md)
-The guidelines describe some of the criteria to ensure the best user experience.
-
-### [Connect with the community](./community.md)
-Share your ideas with the rest of the Glass development community.
-
+This archive is not meant for the personal gain of any GlassKit team member whatsoever, it is simply to preserve an important piece of Glassware history and documentation *in the off-chance that something happens to the official version*.
