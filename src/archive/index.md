@@ -14,6 +14,6 @@ You will find this paragraph at the bottom of every page in this archive, as to 
 Portions of this page are reproduced from work created and [shared by Google](https://developers.google.com/readme/policies) and used according to terms described in the [Creative Commons 4.0 Attribution License](https://creativecommons.org/licenses/by/4.0/).
 ```
 
-Read more: https://developers.google.com/terms/site-policies#restrictions
+Read more: [developers.google.com/terms/site-policies#restrictions](https://developers.google.com/terms/site-policies#restrictions)
 
-This archive is not meant for the personal gain of any GlassKit team member whatsoever, it is simply to preserve an important piece of Glassware history and documentation *in the off-chance that something happens to the official version*.
+This archive is not meant for the personal gain of any GlassKit team member whatsoever, it is simply to preserve an important piece of Glass history and documentation *in the off-chance that something happens to the official version*.

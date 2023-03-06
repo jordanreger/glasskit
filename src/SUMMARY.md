@@ -29,5 +29,16 @@
 	- [Immersions](./archive/glass/develop/gdk/immersions.md)
 	- [Card Design](./archive/glass/develop/gdk/card-design.md)
 	- [Card Scroller](./archive/glass/develop/gdk/card-scroller.md)
-<!-- slider -->
-
+	- [Slider](./archive/glass/develop/gdk/slider.md)
+- [Inputs and Sensors](./archive/glass/develop/gdk/index.md)
+	- [Voice Input](./archive/glass/develop/gdk/voice.md)
+	- [Touch Gestures](./archive/glass/develop/gdk/touch.md)
+	- [Location and Sensors](./archive/glass/develop/gdk/location-sensors.md)
+	- [Camera](./archive/glass/develop/gdk/camera.md)
+- [Distribution](./archive/glass/distribute/index.md)
+	- [Glassware Checklist](./archive/glass/distribute/checklist.md)
+	<!-- glassware update -->
+	<!-- voice command checklist -->
+	<!-- branding guidelines -->
+	<!-- best practices -->
+	- [Glass Enterprise Edition](./archive/glass/distribute/glass-enterprise.md)

@@ -46,7 +46,7 @@ Glass displays most text in white and uses the following standard colors to deno
 | green      | \#99cc33  |
 | yellow     | \#ddbb11  |
 
-> **Note**: if you apply these CSS styles to your HTML timeline cards, Glass renders them automatically with the correct color. Glass uses the [base_style.css](base_style.css) file to render HTML cards.
+> **Note**: if you apply these CSS styles to your HTML timeline cards, Glass renders them automatically with the correct color. Glass uses the [base_style.css](./static/base_style.css) file to render HTML cards.
 
 The following example uses colors to denote important information about train lines and status.
 
