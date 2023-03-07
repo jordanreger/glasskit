@@ -27,14 +27,21 @@ async function handler(req: Request): Promise<Response> {
       content_type = "text/plain";
     }
   } else {
-    const file_info = path.includes(".html") ? await Deno.stat(`./book${path}`) : await Deno.stat(`./book${path}.html`);
+    if(path === "/") {
+      path = "./book/index.html";
+    }
 
-    if(path === "/" || file_info.isDirectory === true) {
-      path = `${path === "/" ? "/" : path + "/"}index.html`;
+    if(!path.includes(".html")) {
+      try {
+        const file_info = await Deno.stat(`./book${path}.html`);
+        path = `./book${path}.html`;
+      } catch (_) {
+        path = `./book${path.at(-1) === "/" ? path.slice(0, -1) : path}/index.html`;
+      }
     }
 
     try {
-      page = path.includes(".html") ? await Deno.readTextFile(`./book${path}`) : await Deno.readTextFile(`./book${path}.html`);
+      page = await Deno.readTextFile(path);
       content_type = "text/html; charset=utf-8";
     } catch(_) {
       page = await Deno.readTextFile(`./book/404.html`);
