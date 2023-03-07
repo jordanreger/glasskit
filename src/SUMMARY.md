@@ -47,3 +47,12 @@
 # Official GDK Reference
 
 - [Overview](./archive/glass/develop/gdk/reference/index.md)
+- [glass.app](./archive/glass/develop/gdk/reference/com/google/android/glass/app/package-summary.md)
+	- [Overview](./archive/glass/develop/gdk/reference/com/google/android/glass/app/package-summary.md)
+	- [ContextualMenus](./archive/glass/develop/gdk/reference/com/google/android/glass/app/ContextualMenus.md)
+		- [Overview](./archive/glass/develop/gdk/reference/com/google/android/glass/app/ContextualMenus.md)
+		- [Command](./archive/glass/develop/gdk/reference/com/google/android/glass/app/ContextualMenus.Command.md)
+	- [VoiceTriggers](./archive/glass/develop/gdk/reference/com/google/android/glass/app/VoiceTriggers.md)
+		- [Overview](./archive/glass/develop/gdk/reference/com/google/android/glass/app/VoiceTriggers.md)
+		- [Command](./archive/glass/develop/gdk/reference/com/google/android/glass/app/VoiceTriggers.Command.md)
+
