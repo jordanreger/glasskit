@@ -38,9 +38,11 @@ async function handler(req: Request): Promise<Response> {
       } catch (_) {
         path = `./book${path.at(-1) === "/" ? path.slice(0, -1) : path}/index.html`;
       }
+    } else {
+      path = `./book${path}`;
     }
 
-    try {
+    try{
       page = await Deno.readTextFile(path);
       content_type = "text/html; charset=utf-8";
     } catch(_) {
