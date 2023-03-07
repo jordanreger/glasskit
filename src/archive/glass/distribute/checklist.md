@@ -8,8 +8,8 @@ These guidelines will help you avoid common pitfalls and guide you through the p
 
 ### I1. Use voice commands correctly
 
--   Ensure your Glassware uses [approved voice commands](https://developers.google.com/glass/develop/gdk/reference/com/google/android/glass/app/VoiceTriggers.Command) [**TODO**: ADD LINK].
--   Ensure your Glassware uses [approved contextual commands](https://developers.google.com/glass/develop/gdk/reference/com/google/android/glass/app/ContextualMenus.Command) [**TODO**: ADD LINK].
+-   Ensure your Glassware uses [approved voice commands](/archive/glass/develop/gdk/reference/com/google/android/glass/app/VoiceTriggers.Command.md).
+-   Ensure your Glassware uses [approved contextual commands](/archive/glass/develop/gdk/reference/com/google/android/glass/app/ContextualMenus.Command.html).
 -   The Mirror API is not designed to receive requests from users and respond in real-time or with low latency. If this is a requirement, use the GDK. For example, Mirror API Glassware works well with the "take a note" or "post an update" command, because users do not have to wait for a response from the Glassware after invoking the command.
 -   In contrast, "start a timer" and "tune an instrument" don't work well with Mirror API Glassware, because users expect the experience to start immediately.
 
@@ -17,7 +17,7 @@ These guidelines will help you avoid common pitfalls and guide you through the p
 
 The two main ways for users to invoke Glassware and its features are by using a voice or touch command from the **ok glass** main menu or through a contextual menu from a timeline card.
 
-You should never force users to pin a timeline card with menu items for the purpose launching Glassware. The Mirror API is designed for [periodic notifications](../design/patterns#periodic_notifications) based on user-configured settings or to [share content with contacts](https://developers.google.com/glass/develop/mirror/contacts) [**TODO**: ADD LINKS].
+You should never force users to pin a timeline card with menu items for the purpose launching Glassware. The Mirror API is designed for [periodic notifications](../design/patterns#periodic_notifications) based on user-configured settings or to [share content with contacts](https://developers.google.com/glass/develop/mirror/contacts) [**TODO**: ADD LINK].
 
 Providing menu items to launch GDK Glassware or call the Mirror API is okay as long as the experience is consistent with the [periodic notifications](../design/patterns#periodic_notifications) design pattern and does not use the [Mirror API for immediate interactivity](https://developers.google.com/glass/distribute/best-practices#dont_use_the_mirror_api_for_immediate_interactivity) [**TODO**: ADD LINK].
 
