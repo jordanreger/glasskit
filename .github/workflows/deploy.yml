@@ -16,5 +16,5 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "glass"
-          entrypoint: "https://deno.land/std@0.134.0/http/file_server.ts"
+          entrypoint: "https://deno.land/std@0.178.0/http/file_server.ts"
           root: book/
