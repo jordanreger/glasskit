@@ -27,7 +27,7 @@ async function handler(req: Request): Promise<Response> {
       content_type = "text/plain";
     }
   } else {
-    const file_info = await Deno.stat(`./book${path}`);
+    const file_info = path.includes(".html") ? await Deno.stat(`./book${path}`) : await Deno.stat(`./book${path}.html`);
 
     if(path === "/" || file_info.isDirectory === true) {
       path = `${path === "/" ? "/" : path + "/"}index.html`;
