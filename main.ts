@@ -27,8 +27,10 @@ async function handler(req: Request): Promise<Response> {
       content_type = "text/plain";
     }
   } else {
-    if(path === "/") {
-      path = "/index.html";
+    const file_info = await Deno.stat(`./book${path}`);
+
+    if(path === "/" || file_info.isDirectory === true) {
+      path = `${path === "/" ? "/" : path + "/"}index.html`;
     }
 
     try {

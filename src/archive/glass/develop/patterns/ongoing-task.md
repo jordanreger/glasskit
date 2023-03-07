@@ -95,9 +95,9 @@ The following files are associated with the Stopwatch voice command:
 
 > **Development Tip**:
 > 
-> Check out the list of [existing commands](https://developers.google.com/glass/develop/gdk/reference/com/google/android/glass/app/VoiceTriggers.Command) [**TODO**: SWITCH LINK].
+> Check out the list of [existing commands](/archive/glass/develop/gdk/reference/com/google/android/glass/app/VoiceTriggers.Command.md).
 > 
-> For development purposes, you can declare any voice command you want by using [voice development mode](https://developers.google.com/glass/develop/gdk/starting-glassware#unlisted_commands) [**TODO**: SWITCH LINK].
+> For development purposes, you can declare any voice command you want by using [voice development mode](/archive/glass/develop/gdk/starting-glassware#unlisted_commands).
 
 ![](ongoing-task-invocation.png)
 
@@ -108,7 +108,7 @@ The Stopwatch shows a countdown before the time is actually recorded to give use
 The following files are associated with the countdown view:
 
 -   `res/layout/card_countdown.xml` - Defines the layout for the countdown viewer
--   `src/com/google/android/glass/sample/stopwatch/CountDownView.java` [**TODO**: SWITCH LINK] - Defines the view for the countdown.
+-   `src/com/google/android/glass/sample/stopwatch/CountDownView.java` - Defines the view for the countdown.
 
 ### Chronometer view
 

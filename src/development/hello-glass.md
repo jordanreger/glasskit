@@ -74,7 +74,7 @@ We must make a new file at the path `app/res/xml` entitled `show_me_a_demo.xml`,
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>  
-<!-- https://glasskit.dev/archive/glass/develop/gdk/reference/com/google/android/glass/app/VoiceTriggers.Command.html -->  
+<!-- https://glasskit.dev/archive/glass/develop/gdk/reference/com/google/android/glass/app/VoiceTriggers.Command -->  
 <trigger command="SHOW_ME_A_DEMO" />
 ```
 

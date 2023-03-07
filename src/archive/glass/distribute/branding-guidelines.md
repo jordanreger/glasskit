@@ -44,7 +44,7 @@ These guidelines apply to all text that refers to the Glass name and brand.
 > **Editor's note**: [Google abandoned the trademark in October 2017](https://trademarks.justia.com/857/23/google-85723835.html).
 
 -   Where it makes sense, tag content that was created and shared with Glass so that recipients know the origin of the content:
-	 -   Add "**#throughglass**" to the content to categorize it for easy discoverability and aggregation. This is often the case with photos and videos publicly shared on social networking sites.
+	 -   Add "**\#throughglass**" to the content to categorize it for easy discoverability and aggregation. This is often the case with photos and videos publicly shared on social networking sites.
 	-   Add "**Sent through Glass**" when categorization is not needed. This is often the case for emails.
 
 ### Glass logo

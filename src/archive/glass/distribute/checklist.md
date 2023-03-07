@@ -9,7 +9,7 @@ These guidelines will help you avoid common pitfalls and guide you through the p
 ### I1. Use voice commands correctly
 
 -   Ensure your Glassware uses [approved voice commands](/archive/glass/develop/gdk/reference/com/google/android/glass/app/VoiceTriggers.Command.md).
--   Ensure your Glassware uses [approved contextual commands](/archive/glass/develop/gdk/reference/com/google/android/glass/app/ContextualMenus.Command.html).
+-   Ensure your Glassware uses [approved contextual commands](/archive/glass/develop/gdk/reference/com/google/android/glass/app/ContextualMenus.Command).
 -   The Mirror API is not designed to receive requests from users and respond in real-time or with low latency. If this is a requirement, use the GDK. For example, Mirror API Glassware works well with the "take a note" or "post an update" command, because users do not have to wait for a response from the Glassware after invoking the command.
 -   In contrast, "start a timer" and "tune an instrument" don't work well with Mirror API Glassware, because users expect the experience to start immediately.
 

@@ -129,9 +129,9 @@ The following files are associated with the Charades voice command:
 
 > **Development Tip**: 
 > 
-> Check out the list of [existing commands](https://developers.google.com/glass/develop/gdk/reference/com/google/android/glass/app/VoiceTriggers.Command) [**TODO**: ADD LINK].
+> Check out the list of [existing commands](/archive/glass/develop/gdk/reference/com/google/android/glass/app/VoiceTriggers.Command.md).
 > 
-> For development purposes, you can declare any voice command you want by using [voice development mode](https://developers.google.com/glass/develop/gdk/starting-glassware#unlisted_commands) [**TODO**: ADD LINK].
+> For development purposes, you can declare any voice command you want by using [voice development mode](/archive/glass/develop/gdk/starting-glassware#unlisted_commands).
 
 ### Splash screen activity
 

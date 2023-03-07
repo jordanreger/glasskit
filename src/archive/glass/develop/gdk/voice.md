@@ -13,9 +13,9 @@ These voice commands launch Glassware from the Home card (Clock card). When you 
 
 To add a voice command to the **ok glass** voice main menu:
 
-1.  Create an XML resource for the voice command in `res/xml/<my_voice_trigger>.xml` that uses one of the existing voice commands defined in [`VoiceTriggers.Command`](https://developers.google.com/glass/develop/gdk/reference/com/google/android/glass/app/VoiceTriggers.Command) [**TODO**: ADD LINK]. For example, here's how to use "Start a run".
+1.  Create an XML resource for the voice command in `res/xml/<my_voice_trigger>.xml` that uses one of the existing voice commands defined in [`VoiceTriggers.Command`](/archive/glass/develop/gdk/reference/com/google/android/glass/app/VoiceTriggers.Command.md). For example, here's how to use "Start a run".
 
-> **Note**: You can use [unlisted voice commands](https://developers.google.com/glass/develop/gdk/voice#unlisted_commands) [**TODO**: ADD LINK] for development purposes.
+> **Note**: You can use [unlisted voice commands](/archive/glass/develop/gdk/voice#unlisted_commands) for development purposes.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -182,7 +182,7 @@ Here's an example of the menu resource used by the previous activity. Notice how
 </menu>
 ```
 
-> **Note**: The menu titles in the previous menu resource use custom strings, which you can do if you specify the [development permission.](https://developers.google.com/glass/develop/gdk/voice#unlisted_commands) [**TODO**: ADD LINK] In your Glassware, use the values in the [`ContextualMenus.Command`](https://developers.google.com/glass/develop/gdk/reference/com/google/android/glass/app/ContextualMenus.Command) [**TODO**: ADD LINK] enum. For example, to use the [`PLAY_MUSIC`](https://developers.google.com/glass/develop/gdk/reference/com/google/android/glass/app/ContextualMenus.Command#PLAY_MUSIC) [**TODO**: ADD LINK] and [`PAUSE_MUSIC`](https://developers.google.com/glass/develop/gdk/reference/com/google/android/glass/app/ContextualMenus.Command#PAUSE_MUSIC) [**TODO**: ADD LINK] commands, you can create the following menu resource:
+> **Note**: The menu titles in the previous menu resource use custom strings, which you can do if you specify the [development permission.](/archive/glass/develop/gdk/voice#unlisted_commands) [**TODO**: ADD LINK] In your Glassware, use the values in the [`ContextualMenus.Command`](/archive/glass/develop/gdk/reference/com/google/android/glass/app/ContextualMenus.Command) enum. For example, to use the [`PLAY_MUSIC`](/archive/glass/develop/gdk/reference/com/google/android/glass/app/ContextualMenus.Command#PLAY_MUSIC) and [`PAUSE_MUSIC`](/archive/glass/develop/gdk/reference/com/google/android/glass/app/ContextualMenus.Command#PAUSE_MUSIC) commands, you can create the following menu resource:
 
 ```xml
 <menu xmlns:android="http://schemas.android.com/apk/res/android">    <!-- Use the constants defined in the ContextualMenus.Command enum-->    <item        android:id="@+id/play_menu_item"        android:title="PLAY_MUSIC" />    <item        android:id="@+id/pause_menu_item"        android:title="PAUSE_MUSIC" /></menu>
@@ -236,7 +236,7 @@ With these changes, you can either tap or say **ok glass** to display your men
 
 ## Using unlisted voice commands for development
 
-When you want to distribute your Glassware, you must use the approved main voice commands in [`VoiceTriggers.Command`](https://developers.google.com/glass/develop/gdk/reference/com/google/android/glass/app/VoiceTriggers.Command) and approved contextual voice commands in [`ContextualMenus.Command`](https://developers.google.com/glass/develop/gdk/reference/com/google/android/glass/app/ContextualMenus.Command).
+When you want to distribute your Glassware, you must use the approved main voice commands in [`VoiceTriggers.Command`](/archive/glass/develop/gdk/reference/com/google/android/glass/app/VoiceTriggers.Command) and approved contextual voice commands in [`ContextualMenus.Command`](/archive/glass/develop/gdk/reference/com/google/android/glass/app/ContextualMenus.Command).
 
 If you want to use voice commands that are not available in the GDK, you can request an Android permission in your `AndroidManifest.xml` file:
 

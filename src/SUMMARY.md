@@ -55,4 +55,11 @@
 	- [VoiceTriggers](./archive/glass/develop/gdk/reference/com/google/android/glass/app/VoiceTriggers.md)
 		- [Overview](./archive/glass/develop/gdk/reference/com/google/android/glass/app/VoiceTriggers.md)
 		- [Command](./archive/glass/develop/gdk/reference/com/google/android/glass/app/VoiceTriggers.Command.md)
-
+- [glass.content](./archive/glass/develop/gdk/reference/com/google/android/glass/content/package-summary.md)
+	- [Overview](./archive/glass/develop/gdk/reference/com/google/android/glass/contents/package-summary.md)
+	- [Intents](./archive/glass/develop/gdk/reference/com/google/android/glass/content/Intents.md)
+- [glass.media](./archive/glass/develop/gdk/reference/com/google/android/glass/media/package-summary.md)
+	- [Overview](./archive/glass/develop/gdk/reference/com/google/android/glass/media/package-summary.md)
+	- [Sounds](./archive/glass/develop/gdk/reference/com/google/android/glass/media/Sounds.md)
+- [glass.touchpad](./archive/glass/develop/gdk/reference/com/google/android/glass/touchpad/package-summary.md)
+	- [Overview](./archive/glass/develop/gdk/reference/com/google/android/glass/touchpad/package-summary.md)
