@@ -1,4 +1,4 @@
-[Introduction](introduction.md)
+[About](about.md)
 
 # GlassKit
 - [Getting Started](./getting-started.md)
@@ -7,7 +7,8 @@
 	- [Glass Development Kit](./development/gdk/index.md)
 - [Downloading Glassware](./glassware/index.md)
 
-# Official GDK Archive
+# Official GDK Guides
+
 - [About the Archive](./archive/index.md)
 - [Home](./archive/glass/index.md)
 - [Design](./archive/glass/design/index.md)
@@ -37,8 +38,12 @@
 	- [Camera](./archive/glass/develop/gdk/camera.md)
 - [Distribution](./archive/glass/distribute/index.md)
 	- [Glassware Checklist](./archive/glass/distribute/checklist.md)
-	<!-- glassware update -->
-	<!-- voice command checklist -->
-	<!-- branding guidelines -->
-	<!-- best practices -->
+	- [Glassware Update](./archive/glass/distribute/update.md)
+	- [Voice Command Checklist](./archive/glass/distribute/voice-checklist.md)
+	- [Branding Guidelines](./archive/glass/distribute/branding-guidelines.md)
+	- [Best Practices](./archive/glass/distribute/best-practices.md)
 	- [Glass Enterprise Edition](./archive/glass/distribute/glass-enterprise.md)
+
+# Official GDK Reference
+
+- [Overview](./archive/glass/develop/gdk/reference/index.md)
