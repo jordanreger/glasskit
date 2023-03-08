@@ -8,23 +8,23 @@ Contains classes to detect gestures on the touchpad.
 
 ---
 
-[GestureDetector.BaseListener](https://developers.google.com/glass/develop/gdk/reference/com/google/android/glass/touchpad/GestureDetector.BaseListener) [**TODO**: ADD LINK] - Receives detection results.
+[GestureDetector.BaseListener](GestureDetector.BaseListener) - Receives detection results.
 
 ---
 
-[GestureDetector.FingerListener](https://developers.google.com/glass/develop/gdk/reference/com/google/android/glass/touchpad/GestureDetector.FingerListener) [**TODO**: ADD LINK] - This listener reports when the detected finger count changes on the touchpad.
+[GestureDetector.FingerListener](GestureDetector.FingerListener) - This listener reports when the detected finger count changes on the touchpad.
 
 ---
 
-[GestureDetector.OneFingerScrollListener](https://developers.google.com/glass/develop/gdk/reference/com/google/android/glass/touchpad/GestureDetector.OneFingerScrollListener) [**TODO**: ADD LINK] - This listener receives continuous one finger horizontal scrolling events.
+[GestureDetector.OneFingerScrollListener](GestureDetector.OneFingerScrollListener) - This listener receives continuous one finger horizontal scrolling events.
 
 ---
 
-[GestureDetector.ScrollListener](https://developers.google.com/glass/develop/gdk/reference/com/google/android/glass/touchpad/GestureDetector.ScrollListener) [**TODO**: ADD LINK] - This listener receives continuous horizontal scrolling events independent of the finger count.
+[GestureDetector.ScrollListener](GestureDetector.ScrollListener) - This listener receives continuous horizontal scrolling events independent of the finger count.
 
 ---
 
-[GestureDetector.TwoFingerScrollListener](https://developers.google.com/glass/develop/gdk/reference/com/google/android/glass/touchpad/GestureDetector.TwoFingerScrollListener) [**TODO**: ADD LINK] - This listener receives continuous two finger horizontal scrolling events.
+[GestureDetector.TwoFingerScrollListener](GestureDetector.TwoFingerScrollListener) - This listener receives continuous two finger horizontal scrolling events.
 
 ---
 
@@ -32,7 +32,7 @@ Contains classes to detect gestures on the touchpad.
 
 ---
 
-[GestureDetector](https://developers.google.com/glass/develop/gdk/reference/com/google/android/glass/touchpad/GestureDetector) [**TODO**: ADD LINK] - A gesture detector optimized to recognize touch gestures for the touchpad.
+[GestureDetector](GestureDetector) - A gesture detector optimized to recognize touch gestures for the touchpad.
 
 ---
 
@@ -40,7 +40,8 @@ Contains classes to detect gestures on the touchpad.
 
 ---
 
-[Gesture](https://developers.google.com/glass/develop/gdk/reference/com/google/android/glass/touchpad/Gesture) [**TODO**: ADD LINK] - A list of gestures detected on the touchpad.
+[Gesture](Gesture) - A list of gestures detected on the touchpad.
 
 ---
 
+Portions of this page are reproduced from work created and [shared by Google](https://developers.google.com/readme/policies) and used according to terms described in the [Creative Commons 4.0 Attribution License](https://creativecommons.org/licenses/by/4.0/).
