@@ -28,19 +28,21 @@ async function handler(req: Request): Promise<Response> {
     }
   } else {
     if(path === "/") {
-      path = "./book/index.html";
+      path = "/index.html";
     }
 
     if(!path.includes(".html")) {
       try {
         const file_info = await Deno.stat(`./book${path}.html`);
-        path = `./book${path}.html`;
+        path = `${path}.html`;
       } catch (_) {
-        path = `./book${path.at(-1) === "/" ? path.slice(0, -1) : path}/index.html`;
+        path = `${path.at(-1) === "/" ? path.slice(0, -1) : path}/index.html`;
       }
-    } else {
-      path = `./book${path}`;
     }
+
+    path = `./book${path}`;
+
+    console.log(path);
 
     try{
       page = await Deno.readTextFile(path);
