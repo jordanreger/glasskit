@@ -8,23 +8,23 @@ Contains classes for Glass-themed UI widgets.
 
 ---
 
-[Slider.Determinate](Slider.Determinate) - A determinate slider that tracks a position from left to right. 
+[Slider.Determinate](Slider.Determinate.md) - A determinate slider that tracks a position from left to right. 
 
 ---
 
-[Slider.GracePeriod](Slider.GracePeriod) - A slider that animates from left to right during the given grace period in timeInMs and then dismisses itself after running the appropriate callback. 
+[Slider.GracePeriod](Slider.GracePeriod.md) - A slider that animates from left to right during the given grace period in timeInMs and then dismisses itself after running the appropriate callback. 
 
 ---
 
-[Slider.GracePeriod.Listener](Slider.GracePeriod.Listener) - Listener call-backs. 
+[Slider.GracePeriod.Listener](Slider.GracePeriod.Listener.md) - Listener call-backs. 
 
 ---
 
-[Slider.Indeterminate](Slider.Indeterminate) - An indeterminate slider that animates continuously to indicate ongoing but otherwise unknown progress. 
+[Slider.Indeterminate](Slider.Indeterminate.md) - An indeterminate slider that animates continuously to indicate ongoing but otherwise unknown progress. 
 
 ---
 
-[Slider.Scroller](Slider.Scroller) - A scroll slider that indicates the current position within a fixed-size collection. 
+[Slider.Scroller](Slider.Scroller.md) - A scroll slider that indicates the current position within a fixed-size collection. 
 
 ---
 
@@ -32,19 +32,19 @@ Contains classes for Glass-themed UI widgets.
 
 ---
 
-[CardBuilder](CardBuilder) - The [`CardBuilder`](CardBuilder) class helps with building Glass-themed cards with various layouts. 
+[CardBuilder](CardBuilder.md) - The [`CardBuilder`](CardBuilder) class helps with building Glass-themed cards with various layouts. 
 
 ---
 
-[CardScrollAdapter](CardScrollAdapter) - A special form of a [`BaseAdapter`](http://developer.android.com/reference/android/widget/BaseAdapter.html). 
+[CardScrollAdapter](CardScrollAdapter.md) - A special form of a [`BaseAdapter`](http://developer.android.com/reference/android/widget/BaseAdapter.html). 
 
 ---
 
-[CardScrollView](CardScrollView) - A [`View`](http://developer.android.com/reference/android/view/View.html) that shows horizontally scrolling children views, referred to as cards. 
+[CardScrollView](CardScrollView.md) - A [`View`](http://developer.android.com/reference/android/view/View.html) that shows horizontally scrolling children views, referred to as cards. 
 
 ---
 
-[Slider](Slider) - A [`Slider`](Slider) from which slider appearances can be drawn: [`Slider.Scroller`](Slider.Scroller), [`Slider.Determinate`](Slider.Determinate), [`Slider.Indeterminate`](Slider.Indeterminate), and [`Slider.GracePeriod`](Slider.GracePeriod). 
+[Slider](Slider.md) - A [`Slider`](Slider.md) from which slider appearances can be drawn: [`Slider.Scroller`](Slider.Scroller.md), [`Slider.Determinate`](Slider.Determinate.md), [`Slider.Indeterminate`](Slider.Indeterminate.md), and [`Slider.GracePeriod`](Slider.GracePeriod.md). 
 
 ---
 

@@ -46,10 +46,10 @@ An alert with a large centered icon and a message and footnote underneath.
 
 ##### See Also
 
--   [`setFootnote(CharSequence)`](CardBuilder#setFootnote(java.lang.CharSequence))
--   [`setIcon(Drawable)`](CardBuilder#setIcon(android.graphics.drawable.Drawable))
--   [`setText(CharSequence)`](CardBuilder#setText(java.lang.CharSequence))
--   [`setAttributionIcon(Drawable)`](CardBuilder#setAttributionIcon(android.graphics.drawable.Drawable))
+-   [`setFootnote(CharSequence)`](CardBuilder.md#setFootnote(java.lang.CharSequence))
+-   [`setIcon(Drawable)`](CardBuilder.md#setIcon(android.graphics.drawable.Drawable))
+-   [`setText(CharSequence)`](CardBuilder.md#setText(java.lang.CharSequence))
+-   [`setAttributionIcon(Drawable)`](CardBuilder.md#setAttributionIcon(android.graphics.drawable.Drawable))
 
 Added in API level XE21
 
@@ -59,15 +59,15 @@ Content with a focus on the author: an avatar with a heading and subheading, and
 
 ##### See Also
 
--   [`addImage(Drawable)`](CardBuilder#addImage(android.graphics.drawable.Drawable))
--   [`setAttributionIcon(Drawable)`](CardBuilder#setAttributionIcon(android.graphics.drawable.Drawable))
--   [`setFootnote(CharSequence)`](CardBuilder#setFootnote(java.lang.CharSequence))
--   [`setHeading(CharSequence)`](CardBuilder#setHeading(java.lang.CharSequence))
--   [`setIcon(Drawable)`](CardBuilder#setIcon(android.graphics.drawable.Drawable))
--   [`setSubheading(CharSequence)`](CardBuilder#setSubheading(java.lang.CharSequence))
--   [`setText(CharSequence)`](CardBuilder#setText(java.lang.CharSequence))
--   [`setTimestamp(CharSequence)`](CardBuilder#setTimestamp(java.lang.CharSequence))
--   [`showStackIndicator(boolean)`](CardBuilder#showStackIndicator(boolean))
+-   [`addImage(Drawable)`](CardBuilder.md#addImage(android.graphics.drawable.Drawable))
+-   [`setAttributionIcon(Drawable)`](CardBuilder.md#setAttributionIcon(android.graphics.drawable.Drawable))
+-   [`setFootnote(CharSequence)`](CardBuilder.md#setFootnote(java.lang.CharSequence))
+-   [`setHeading(CharSequence)`](CardBuilder.md#setHeading(java.lang.CharSequence))
+-   [`setIcon(Drawable)`](CardBuilder.md#setIcon(android.graphics.drawable.Drawable))
+-   [`setSubheading(CharSequence)`](CardBuilder.md#setSubheading(java.lang.CharSequence))
+-   [`setText(CharSequence)`](CardBuilder.md#setText(java.lang.CharSequence))
+-   [`setTimestamp(CharSequence)`](CardBuilder.md#setTimestamp(java.lang.CharSequence))
+-   [`showStackIndicator(boolean)`](CardBuilder.md#showStackIndicator(boolean))
 
 Added in API level XE21
 
@@ -77,13 +77,13 @@ Images appear full screen in the background with a text caption and optional ava
 
 ##### See Also
 
--   [`addImage(Drawable)`](CardBuilder#addImage(android.graphics.drawable.Drawable))
--   [`setAttributionIcon(Drawable)`](CardBuilder#setAttributionIcon(android.graphics.drawable.Drawable))
--   [`setFootnote(CharSequence)`](CardBuilder#setFootnote(java.lang.CharSequence))
--   [`setIcon(Drawable)`](CardBuilder#setIcon(android.graphics.drawable.Drawable))
--   [`setText(CharSequence)`](CardBuilder#setText(java.lang.CharSequence))
--   [`setTimestamp(CharSequence)`](CardBuilder#setTimestamp(java.lang.CharSequence))
--   [`showStackIndicator(boolean)`](CardBuilder#showStackIndicator(boolean))
+-   [`addImage(Drawable)`](CardBuilder.md#addImage(android.graphics.drawable.Drawable))
+-   [`setAttributionIcon(Drawable)`](CardBuilder.md#setAttributionIcon(android.graphics.drawable.Drawable))
+-   [`setFootnote(CharSequence)`](CardBuilder.md#setFootnote(java.lang.CharSequence))
+-   [`setIcon(Drawable)`](CardBuilder.md#setIcon(android.graphics.drawable.Drawable))
+-   [`setText(CharSequence)`](CardBuilder.md#setText(java.lang.CharSequence))
+-   [`setTimestamp(CharSequence)`](CardBuilder.md#setTimestamp(java.lang.CharSequence))
+-   [`showStackIndicator(boolean)`](CardBuilder.md#showStackIndicator(boolean))
 
 Added in API level XE21
 
@@ -93,13 +93,13 @@ A two-column layout with images on the left and text on the right. The size of t
 
 ##### See Also
 
--   [`addImage(Drawable)`](CardBuilder#addImage(android.graphics.drawable.Drawable))
--   [`setAttributionIcon(Drawable)`](CardBuilder#setAttributionIcon(android.graphics.drawable.Drawable))
--   [`setFootnote(CharSequence)`](CardBuilder#setFootnote(java.lang.CharSequence))
--   [`setIcon(Drawable)`](CardBuilder#setIcon(android.graphics.drawable.Drawable))
--   [`setText(CharSequence)`](CardBuilder#setText(java.lang.CharSequence))
--   [`setTimestamp(CharSequence)`](CardBuilder#setTimestamp(java.lang.CharSequence))
--   [`showStackIndicator(boolean)`](CardBuilder#showStackIndicator(boolean))
+-   [`addImage(Drawable)`](CardBuilder.md#addImage(android.graphics.drawable.Drawable))
+-   [`setAttributionIcon(Drawable)`](CardBuilder.md#setAttributionIcon(android.graphics.drawable.Drawable))
+-   [`setFootnote(CharSequence)`](CardBuilder.md#setFootnote(java.lang.CharSequence))
+-   [`setIcon(Drawable)`](CardBuilder.md#setIcon(android.graphics.drawable.Drawable))
+-   [`setText(CharSequence)`](CardBuilder.md#setText(java.lang.CharSequence))
+-   [`setTimestamp(CharSequence)`](CardBuilder.md#setTimestamp(java.lang.CharSequence))
+-   [`showStackIndicator(boolean)`](CardBuilder.md#showStackIndicator(boolean))
 
 Added in API level XE21
 
@@ -109,13 +109,13 @@ A two-column layout with images on the left and text on the right. The size of t
 
 ##### See Also
 
--   [`addImage(Drawable)`](CardBuilder#addImage(android.graphics.drawable.Drawable))
--   [`setAttributionIcon(Drawable)`](CardBuilder#setAttributionIcon(android.graphics.drawable.Drawable))
--   [`setFootnote(CharSequence)`](CardBuilder#setFootnote(java.lang.CharSequence))
--   [`setIcon(Drawable)`](CardBuilder#setIcon(android.graphics.drawable.Drawable))
--   [`setText(CharSequence)`](CardBuilder#setText(java.lang.CharSequence))
--   [`setTimestamp(CharSequence)`](CardBuilder#setTimestamp(java.lang.CharSequence))
--   [`showStackIndicator(boolean)`](CardBuilder#showStackIndicator(boolean))
+-   [`addImage(Drawable)`](CardBuilder.md#addImage(android.graphics.drawable.Drawable))
+-   [`setAttributionIcon(Drawable)`](CardBuilder.md#setAttributionIcon(android.graphics.drawable.Drawable))
+-   [`setFootnote(CharSequence)`](CardBuilder.md#setFootnote(java.lang.CharSequence))
+-   [`setIcon(Drawable)`](CardBuilder.md#setIcon(android.graphics.drawable.Drawable))
+-   [`setText(CharSequence)`](CardBuilder.md#setText(java.lang.CharSequence))
+-   [`setTimestamp(CharSequence)`](CardBuilder.md#setTimestamp(java.lang.CharSequence))
+-   [`showStackIndicator(boolean)`](CardBuilder.md#showStackIndicator(boolean))
 
 Added in API level XE22
 
@@ -125,14 +125,14 @@ Allows a custom layout to be embedded inside a card that optionally has a standa
 
 The embedded layout will be inflated inside a [`RelativeLayout`](http://developer.android.com/reference/android/widget/RelativeLayout.html) that is bounded within the standard margins of the card so that it does not overlap with the card's footer.
 
-Once you have called [`getView()`](CardBuilder#getView()) or [`getRemoteViews()`](CardBuilder#getRemoteViews()), you can call `findViewById()` or standard `RemoteViews` methods in order to access the views inside your embedded layout.
+Once you have called [`getView()`](CardBuilder.md#getView()) or [`getRemoteViews()`](CardBuilder.md#getRemoteViews()), you can call `findViewById()` or standard `RemoteViews` methods in order to access the views inside your embedded layout.
 
 ##### See Also
 
--   [`setAttributionIcon(Drawable)`](CardBuilder#setAttributionIcon(android.graphics.drawable.Drawable))
--   [`setFootnote(CharSequence)`](CardBuilder#setFootnote(java.lang.CharSequence))
--   [`setTimestamp(CharSequence)`](CardBuilder#setTimestamp(java.lang.CharSequence))
--   [`showStackIndicator(boolean)`](CardBuilder#showStackIndicator(boolean))
+-   [`setAttributionIcon(Drawable)`](CardBuilder.md#setAttributionIcon(android.graphics.drawable.Drawable))
+-   [`setFootnote(CharSequence)`](CardBuilder.md#setFootnote(java.lang.CharSequence))
+-   [`setTimestamp(CharSequence)`](CardBuilder.md#setTimestamp(java.lang.CharSequence))
+-   [`showStackIndicator(boolean)`](CardBuilder.md#showStackIndicator(boolean))
 
 Added in API level XE21
 
@@ -142,9 +142,9 @@ Text with an optional icon centered in the card and an optional footnote underne
 
 ##### See Also
 
--   [`setFootnote(CharSequence)`](CardBuilder#setFootnote(java.lang.CharSequence))
--   [`setIcon(Drawable)`](CardBuilder#setIcon(android.graphics.drawable.Drawable))
--   [`setText(CharSequence)`](CardBuilder#setText(java.lang.CharSequence))
+-   [`setFootnote(CharSequence)`](CardBuilder.md#setFootnote(java.lang.CharSequence))
+-   [`setIcon(Drawable)`](CardBuilder.md#setIcon(android.graphics.drawable.Drawable))
+-   [`setText(CharSequence)`](CardBuilder.md#setText(java.lang.CharSequence))
 
 Added in API level XE21
 
@@ -154,12 +154,12 @@ Text that fills the whole card, with optional background images. The size of the
 
 ##### See Also
 
--   [`addImage(Drawable)`](CardBuilder#addImage(android.graphics.drawable.Drawable))
--   [`setAttributionIcon(Drawable)`](CardBuilder#setAttributionIcon(android.graphics.drawable.Drawable))
--   [`setFootnote(CharSequence)`](CardBuilder#setFootnote(java.lang.CharSequence))
--   [`setText(CharSequence)`](CardBuilder#setText(java.lang.CharSequence))
--   [`setTimestamp(CharSequence)`](CardBuilder#setTimestamp(java.lang.CharSequence))
--   [`showStackIndicator(boolean)`](CardBuilder#showStackIndicator(boolean)
+-   [`addImage(Drawable)`](CardBuilder.md#addImage(android.graphics.drawable.Drawable))
+-   [`setAttributionIcon(Drawable)`](CardBuilder.md#setAttributionIcon(android.graphics.drawable.Drawable))
+-   [`setFootnote(CharSequence)`](CardBuilder.md#setFootnote(java.lang.CharSequence))
+-   [`setText(CharSequence)`](CardBuilder.md#setText(java.lang.CharSequence))
+-   [`setTimestamp(CharSequence)`](CardBuilder.md#setTimestamp(java.lang.CharSequence))
+-   [`showStackIndicator(boolean)`](CardBuilder.md#showStackIndicator(boolean)
 
 Added in API level XE21
 
@@ -169,12 +169,12 @@ Text that fills the whole card, with optional background images. The size of the
 
 ##### See Also
 
--   [`addImage(Drawable)`](CardBuilder#addImage(android.graphics.drawable.Drawable))
--   [`setAttributionIcon(Drawable)`](CardBuilder#setAttributionIcon(android.graphics.drawable.Drawable))
--   [`setFootnote(CharSequence)`](CardBuilder#setFootnote(java.lang.CharSequence))
--   [`setText(CharSequence)`](CardBuilder#setText(java.lang.CharSequence))
--   [`setTimestamp(CharSequence)`](CardBuilder#setTimestamp(java.lang.CharSequence))
--   [`showStackIndicator(boolean)`](CardBuilder#showStackIndicator(boolean)
+-   [`addImage(Drawable)`](CardBuilder.md#addImage(android.graphics.drawable.Drawable))
+-   [`setAttributionIcon(Drawable)`](CardBuilder.md#setAttributionIcon(android.graphics.drawable.Drawable))
+-   [`setFootnote(CharSequence)`](CardBuilder.md#setFootnote(java.lang.CharSequence))
+-   [`setText(CharSequence)`](CardBuilder.md#setText(java.lang.CharSequence))
+-   [`setTimestamp(CharSequence)`](CardBuilder.md#setTimestamp(java.lang.CharSequence))
+-   [`showStackIndicator(boolean)`](CardBuilder.md#showStackIndicator(boolean)
 
 Added in API level XE21
 
@@ -184,10 +184,10 @@ Images appear full screen in the background with a name and optional icon center
 
 ##### See Also
 
--   [`addImage(Drawable)`](CardBuilder#addImage(android.graphics.drawable.Drawable))
--   [`setIcon(Drawable)`](CardBuilder#setIcon(android.graphics.drawable.Drawable))
--   [`setText(CharSequence)`](CardBuilder#setText(java.lang.CharSequence))
--   [`showStackIndicator(boolean)`](CardBuilder#showStackIndicator(boolean)
+-   [`addImage(Drawable)`](CardBuilder.md#addImage(android.graphics.drawable.Drawable))
+-   [`setIcon(Drawable)`](CardBuilder.md#setIcon(android.graphics.drawable.Drawable))
+-   [`setText(CharSequence)`](CardBuilder.md#setText(java.lang.CharSequence))
+-   [`showStackIndicator(boolean)`](CardBuilder.md#showStackIndicator(boolean)
 
 ---
 

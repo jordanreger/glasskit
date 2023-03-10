@@ -2,21 +2,21 @@
 
 Added in API level XE21
 
-The [`CardBuilder`](CardBuilder) class helps with building Glass-themed cards with various layouts.
+The [`CardBuilder`](CardBuilder.md) class helps with building Glass-themed cards with various layouts.
 
-See [Creating Glass-styled cards](/archive/glass/develop/gdk/card-design#glass-styled_cards) for more information and sample code.
+See [Creating Glass-styled cards](/archive/glass/develop/gdk/card-design.md#glass-styled_cards) for more information and sample code.
 
 ### General usage
 
-1.  Create a `CardBuilder` object, passing the desired [`CardBuilder.Layout`](CardBuilder.Layout) to the constructor.
+1.  Create a `CardBuilder` object, passing the desired [`CardBuilder.Layout`](CardBuilder.Layout.md) to the constructor.
 2.  Set content on the card with the `add/set*` family of methods.
 3.  Get the `View` by calling [`getView()`](#getView()) or get a [`RemoteViews`](http://developer.android.com/reference/android/widget/RemoteViews.html) object with [`getRemoteViews()`](#getRemoteViews()).
 
 ### Recycling note for embedded layouts
 
-When using [`EMBED_INSIDE`](CardBuilder.Layout#EMBED_INSIDE) `CardBuilder` makes no distinction between different embedded layouts when recycling views. If you have two `CardBuilder` instances with `EMBED_INSIDE` but one has layout A and the other has layout B, they will be treated as the same by `CardBuilder`.
+When using [`EMBED_INSIDE`](CardBuilder.Layout.md#EMBED_INSIDE) `CardBuilder` makes no distinction between different embedded layouts when recycling views. If you have two `CardBuilder` instances with `EMBED_INSIDE` but one has layout A and the other has layout B, they will be treated as the same by `CardBuilder`.
 
-If this behavior is undesirable (for example, when using a [`CardScrollAdapter`](CardScrollAdapter) with different embedded layouts), you must distinguish them by returning different view types from [`getItemViewType(int)`](CardScrollAdapter#getItemViewType(int)) so that the recycler only sends you `convertView`s with nested layouts that you expect for a particular item.
+If this behavior is undesirable (for example, when using a [`CardScrollAdapter`](CardScrollAdapter.md) with different embedded layouts), you must distinguish them by returning different view types from [`getItemViewType(int)`](CardScrollAdapter.md#getItemViewType(int)) so that the recycler only sends you `convertView`s with nested layouts that you expect for a particular item.
 
 If you need to support cards with multiple embedded layouts alongside the built-in layouts, we recommend that you return view types numbered [`getViewTypeCount()`](#getViewTypeCount()), `CardBuilder.getViewTypeCount() + 1`, and so on.
 
@@ -26,7 +26,7 @@ If you need to support cards with multiple embedded layouts alongside the built-
 
 | Public Constructors | |
 | --- | --- |
-| [CardBuilder](#CardBuilder(android.content.Context,%20com.google.android.glass.widget.CardBuilder.Layout))([Context](http://developer.android.com/reference/android/content/Context.html) context, [CardBuilder.Layout](CardBuilder.Layout) layout) | |
+| [CardBuilder](#CardBuilder(android.content.Context,%20com.google.android.glass.widget.CardBuilder.Layout))([Context](http://developer.android.com/reference/android/content/Context.html) context, [CardBuilder.Layout](CardBuilder.Layout.md) layout) | |
 
 | Public Methods | |
 | --- | --- |
@@ -77,7 +77,7 @@ If you need to support cards with multiple embedded layouts alongside the built-
 
 Added in API level XE21
 
-#### public **CardBuilder** ([Context](http://developer.android.com/reference/android/content/Context.html) context, [CardBuilder.Layout](CardBuilder.Layout) layout) 
+#### public **CardBuilder** ([Context](http://developer.android.com/reference/android/content/Context.html) context, [CardBuilder.Layout](CardBuilder.Layout.md) layout) 
 
 Constructs a new `CardBuilder`.
 
@@ -90,7 +90,7 @@ Constructs a new `CardBuilder`.
 
 Added in API level XE21
 
-#### public [CardBuilder](CardBuilder) **addImage** ([Drawable](http://developer.android.com/reference/android/graphics/drawable/Drawable.html) imageDrawable) 
+#### public [CardBuilder](CardBuilder.md) **addImage** ([Drawable](http://developer.android.com/reference/android/graphics/drawable/Drawable.html) imageDrawable) 
 
 Adds an image, specified as a [`Drawable`](http://developer.android.com/reference/android/graphics/drawable/Drawable.html), to the card.
 
@@ -105,7 +105,7 @@ This method only applies to cards that are converted into views using [`getView
 
 Added in API level XE21
 
-#### public [CardBuilder](CardBuilder) **addImage** ([Bitmap](http://developer.android.com/reference/android/graphics/Bitmap.html) imageBitmap)
+#### public [CardBuilder](CardBuilder.md) **addImage** ([Bitmap](http://developer.android.com/reference/android/graphics/Bitmap.html) imageBitmap)
 
 Adds an image, specified as a [`Bitmap`](http://developer.android.com/reference/android/graphics/Bitmap.html), to the card.
 
@@ -118,7 +118,7 @@ Adds an image, specified as a [`Bitmap`](http://developer.android.com/reference
 
 Added in API level XE21
 
-#### public [CardBuilder](CardBuilder) **addImage** (int imageId) 
+#### public [CardBuilder](CardBuilder.md) **addImage** (int imageId) 
 
 Adds an image, specified as a drawable resource, to the card.
 
@@ -178,7 +178,7 @@ Useful in combination with an adapter. See [`getViewTypeCount()`](http://develo
 
 Added in API level XE22
 
-#### public [CardBuilder](CardBuilder) **setAttributionIcon** ([Bitmap](http://developer.android.com/reference/android/graphics/Bitmap.html) iconBitmap) 
+#### public [CardBuilder](CardBuilder.md) **setAttributionIcon** ([Bitmap](http://developer.android.com/reference/android/graphics/Bitmap.html) iconBitmap) 
 
 Sets the attribution icon for the card using a [`Bitmap`](http://developer.android.com/reference/android/graphics/Bitmap.html).
 
@@ -192,7 +192,7 @@ Sets the attribution icon for the card using a [`Bitmap`](http://developer.andr
 
 Added in API level XE22
 
-#### public [CardBuilder](CardBuilder) **setAttributionIcon** ([Drawable](http://developer.android.com/reference/android/graphics/drawable/Drawable.html) iconDrawable) 
+#### public [CardBuilder](CardBuilder.md) **setAttributionIcon** ([Drawable](http://developer.android.com/reference/android/graphics/drawable/Drawable.html) iconDrawable) 
 
 Sets the attribution icon for the card using a [`Drawable`](http://developer.android.com/reference/android/graphics/drawable/Drawable.html).
 
@@ -208,7 +208,7 @@ This method only applies to cards that are converted into views using [`getView
 
 Added in API level XE22
 
-#### public [CardBuilder](CardBuilder) **setAttributionIcon** (int iconId) 
+#### public [CardBuilder](CardBuilder.md) **setAttributionIcon** (int iconId) 
 
 Sets the attribution icon for the card using a drawable resource.
 
@@ -222,7 +222,7 @@ Sets the attribution icon for the card using a drawable resource.
 
 Added in API level XE22
 
-#### public [CardBuilder](CardBuilder) **setEmbeddedLayout** (int layoutResId) 
+#### public [CardBuilder](CardBuilder.md) **setEmbeddedLayout** (int layoutResId) 
 
 Sets the resource ID of the layout to embed in the card.
 
@@ -236,7 +236,7 @@ Sets the resource ID of the layout to embed in the card.
 
 Added in API level XE21
 
-#### public [CardBuilder](CardBuilder) **setFootnote** ([CharSequence](http://developer.android.com/reference/java/lang/CharSequence.html) footnote) 
+#### public [CardBuilder](CardBuilder.md) **setFootnote** ([CharSequence](http://developer.android.com/reference/java/lang/CharSequence.html) footnote) 
 
 Sets the footnote text for the card.
 
@@ -250,7 +250,7 @@ Sets the footnote text for the card.
 
 Added in API level XE21
 
-#### public [CardBuilder](CardBuilder) **setFootnote** (int footnoteId) 
+#### public [CardBuilder](CardBuilder.md) **setFootnote** (int footnoteId) 
 
 Sets the footnote text for the card using a string resource.
 
@@ -264,7 +264,7 @@ Sets the footnote text for the card using a string resource.
 
 Added in API level XE21
 
-#### public [CardBuilder](CardBuilder) **setHeading** ([CharSequence](http://developer.android.com/reference/java/lang/CharSequence.html) heading) 
+#### public [CardBuilder](CardBuilder.md) **setHeading** ([CharSequence](http://developer.android.com/reference/java/lang/CharSequence.html) heading) 
 
 Sets the heading text for the card.
 
@@ -278,7 +278,7 @@ Sets the heading text for the card.
 
 Added in API level XE21
 
-#### public [CardBuilder](CardBuilder) **setHeading** (int headingId) 
+#### public [CardBuilder](CardBuilder.md) **setHeading** (int headingId) 
 
 Sets the footnote text for the card using a string resource.
 
@@ -292,7 +292,7 @@ Sets the footnote text for the card using a string resource.
 
 Added in API level XE21
 
-#### public [CardBuilder](CardBuilder) **setIcon** ([CharSequence](http://developer.android.com/reference/java/lang/CharSequence.html) footnote) 
+#### public [CardBuilder](CardBuilder.md) **setIcon** ([CharSequence](http://developer.android.com/reference/java/lang/CharSequence.html) footnote) 
 
 Sets the footnote text for the card.
 
@@ -306,7 +306,7 @@ Sets the footnote text for the card.
 
 Added in API level XE21
 
-#### public [CardBuilder](CardBuilder) **setFootnote** (int footnoteId) 
+#### public [CardBuilder](CardBuilder.md) **setFootnote** (int footnoteId) 
 
 Sets the footnote text for the card using a string resource.
 
@@ -320,7 +320,7 @@ Sets the footnote text for the card using a string resource.
 
 Added in API level XE21
 
-#### public [CardBuilder](CardBuilder) **setIcon** ([Bitmap](http://developer.android.com/reference/android/graphics/Bitmap.html) iconBitmap)
+#### public [CardBuilder](CardBuilder.md) **setIcon** ([Bitmap](http://developer.android.com/reference/android/graphics/Bitmap.html) iconBitmap)
 
 Adds an image, specified as a [`Bitmap`](http://developer.android.com/reference/android/graphics/Bitmap.html), to the card.
 
@@ -333,7 +333,7 @@ Adds an image, specified as a [`Bitmap`](http://developer.android.com/reference
 
 Added in API level XE21
 
-#### public [CardBuilder](CardBuilder) **setIcon** ([Drawable](http://developer.android.com/reference/android/graphics/drawable/Drawable.html) iconDrawable) 
+#### public [CardBuilder](CardBuilder.md) **setIcon** ([Drawable](http://developer.android.com/reference/android/graphics/drawable/Drawable.html) iconDrawable) 
 
 Adds an image, specified as a [`Drawable`](http://developer.android.com/reference/android/graphics/drawable/Drawable.html), to the card.
 
@@ -348,7 +348,7 @@ This method only applies to cards that are converted into views using [`getView
 
 Added in API level XE21
 
-#### public [CardBuilder](CardBuilder) **setIcon** (int iconId) 
+#### public [CardBuilder](CardBuilder.md) **setIcon** (int iconId) 
 
 Adds an image, specified as a drawable resource, to the card.
 
@@ -361,7 +361,7 @@ Adds an image, specified as a drawable resource, to the card.
 
 Added in API level XE21
 
-#### public [CardBuilder](CardBuilder) **setSubheading** ([CharSequence](http://developer.android.com/reference/java/lang/CharSequence.html) subheading)
+#### public [CardBuilder](CardBuilder.md) **setSubheading** ([CharSequence](http://developer.android.com/reference/java/lang/CharSequence.html) subheading)
 
 Sets the subheading text for the card.
 
@@ -375,7 +375,7 @@ Sets the subheading text for the card.
 
 Added in API level XE21
 
-#### public [CardBuilder](CardBuilder) **setSubheading** (int subheadingId)
+#### public [CardBuilder](CardBuilder.md) **setSubheading** (int subheadingId)
 
 Sets the subheading text for the card using a string resource.
 
@@ -389,7 +389,7 @@ Sets the subheading text for the card using a string resource.
 
 Added in API level XE21
 
-#### public [CardBuilder](CardBuilder) **Text** (int textId)
+#### public [CardBuilder](CardBuilder.md) **Text** (int textId)
 
 Sets the main text for the card using a string resource.
 
@@ -403,7 +403,7 @@ Sets the main text for the card using a string resource.
 
 Added in API level XE21
 
-#### public [CardBuilder](CardBuilder) **setText** ([CharSequence](http://developer.android.com/reference/java/lang/CharSequence.html) text)
+#### public [CardBuilder](CardBuilder.md) **setText** ([CharSequence](http://developer.android.com/reference/java/lang/CharSequence.html) text)
 
 Sets the main text for the card.
 
@@ -417,7 +417,7 @@ Sets the main text for the card.
 
 Added in API level XE21
 
-#### public [CardBuilder](CardBuilder) **setTimestamp** ([CharSequence](http://developer.android.com/reference/java/lang/CharSequence.html) timestamp) 
+#### public [CardBuilder](CardBuilder.md) **setTimestamp** ([CharSequence](http://developer.android.com/reference/java/lang/CharSequence.html) timestamp) 
 
 Sets the timestamp text for the card.
 
@@ -431,7 +431,7 @@ Sets the timestamp text for the card.
 
 Added in API level XE21
 
-#### public [CardBuilder](CardBuilder) **setTimestamp** (int timestampId) 
+#### public [CardBuilder](CardBuilder.md) **setTimestamp** (int timestampId) 
 
 Sets the timestamp text for the card using a string resource.
 
@@ -445,7 +445,7 @@ Sets the timestamp text for the card using a string resource.
 
 Added in API level XE22
 
-#### public [CardBuilder](CardBuilder) **showStackIndicator** (boolean visible) 
+#### public [CardBuilder](CardBuilder.md) **showStackIndicator** (boolean visible) 
 
 Shows an indicator if `visible` is true that this card represents a stack of cards, rather than a single card.
 
