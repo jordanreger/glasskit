@@ -129,6 +129,333 @@ Adds an image, specified as a drawable resource, to the card.
 ##### Returns
 - this object for call chaining
 
+Added in API level XE21
+
+#### public void **clearImages** () 
+
+Clears all images that were previously added to the card.
+
+Added in API level XE21
+
+#### public int **getItemViewType** () 
+
+Returns the view type of this particular card.
+
+Useful in combination with an adapter. See [`getItemViewType(int)`](http://developer.android.com/reference/android/widget/Adapter.html#getItemViewType(int)).
+
+Added in API level XE21
+
+#### public [RemoteViews](http://developer.android.com/reference/android/widget/RemoteViews.html) **getRemoteViews** () 
+
+Returns a [`RemoteViews`](http://developer.android.com/reference/android/widget/RemoteViews.html) representation of this card.
+
+Added in API level XE21
+
+#### public [View](http://developer.android.com/reference/android/view/View.html) **getView** ([View](http://developer.android.com/reference/android/view/View.html) convertView, [ViewGroup](http://developer.android.com/reference/android/view/ViewGroup.html) parent) 
+
+Returns a [`View`](http://developer.android.com/reference/android/view/View.html) representation of this card.
+
+Useful in combination with an adapter. See [`getView(int, View, ViewGroup)`](http://developer.android.com/reference/android/widget/Adapter.html#getView(int,%20android.view.View,%20android.view.ViewGroup)).
+
+| Parameters | |
+| --- | --- |
+| convertView | an old view to reuse, if possible; can be `null` Note: if this view does not have the right type, this method creates a new view |
+| parent | that this view will eventually be attached to, maybe `null` |
+
+Added in API level XE21
+
+#### public [View](http://developer.android.com/reference/android/view/View.html) **getView** () 
+
+Returns a [`View`](http://developer.android.com/reference/android/view/View.html) representation of this card.
+
+Added in API level XE21
+
+#### public static int **getViewTypeCount** () 
+
+Returns the total number of view types cards can take.
+
+Useful in combination with an adapter. See [`getViewTypeCount()`](http://developer.android.com/reference/android/widget/Adapter.html#getViewTypeCount()).
+
+Added in API level XE22
+
+#### public [CardBuilder](CardBuilder) **setAttributionIcon** ([Bitmap](http://developer.android.com/reference/android/graphics/Bitmap.html) iconBitmap) 
+
+Sets the attribution icon for the card using a [`Bitmap`](http://developer.android.com/reference/android/graphics/Bitmap.html).
+
+| Parameters | |
+| --- | --- |
+| iconBitmap | the `Bitmap` to use as the attribution icon |
+
+##### Returns
+
+-   this object for call chaining
+
+Added in API level XE22
+
+#### public [CardBuilder](CardBuilder) **setAttributionIcon** ([Drawable](http://developer.android.com/reference/android/graphics/drawable/Drawable.html) iconDrawable) 
+
+Sets the attribution icon for the card using a [`Drawable`](http://developer.android.com/reference/android/graphics/drawable/Drawable.html).
+
+This method only applies to cards that are converted into views using [`getView()`](#getView()). [`RemoteViews`](http://developer.android.com/reference/android/widget/RemoteViews.html) built by `CardBuilder` only support `Bitmap` and resource-based images. `Drawable` images on `RemoteViews` are not supported.
+
+| Parameters | |
+| --- | --- |
+| iconDrawable | the `Drawable` to use as the attribution icon |
+
+##### Returns
+
+-   this object for call chaining
+
+Added in API level XE22
+
+#### public [CardBuilder](CardBuilder) **setAttributionIcon** (int iconId) 
+
+Sets the attribution icon for the card using a drawable resource.
+
+| Parameters | |
+| --- | --- |
+| iconId | the resource ID to use as the attribution icon |
+
+##### Returns
+
+-   this object for call chaining
+
+Added in API level XE22
+
+#### public [CardBuilder](CardBuilder) **setEmbeddedLayout** (int layoutResId) 
+
+Sets the resource ID of the layout to embed in the card.
+
+| Parameters | |
+| --- | --- |
+| layoutResId | the resource ID of the layout to embed in the card |
+
+##### Returns
+
+-   this object for call chaining
+
+Added in API level XE21
+
+#### public [CardBuilder](CardBuilder) **setFootnote** ([CharSequence](http://developer.android.com/reference/java/lang/CharSequence.html) footnote) 
+
+Sets the footnote text for the card.
+
+| Parameters | |
+| --- | --- |
+| footnote | the footnote text for this card |
+
+##### Returns
+
+-   this object for call chaining
+
+Added in API level XE21
+
+#### public [CardBuilder](CardBuilder) **setFootnote** (int footnoteId) 
+
+Sets the footnote text for the card using a string resource.
+
+| Parameters | |
+| --- | --- |
+| footnoteId | the footnote text resource ID for this card |
+
+##### Returns
+
+-   this object for call chaining
+
+Added in API level XE21
+
+#### public [CardBuilder](CardBuilder) **setHeading** ([CharSequence](http://developer.android.com/reference/java/lang/CharSequence.html) heading) 
+
+Sets the heading text for the card.
+
+| Parameters | |
+| --- | --- |
+| heading | the heading text for this card |
+
+##### Returns
+
+-   this object for call chaining
+
+Added in API level XE21
+
+#### public [CardBuilder](CardBuilder) **setHeading** (int headingId) 
+
+Sets the footnote text for the card using a string resource.
+
+| Parameters | |
+| --- | --- |
+| headingId | the heading text resource ID for this card |
+
+##### Returns
+
+-   this object for call chaining
+
+Added in API level XE21
+
+#### public [CardBuilder](CardBuilder) **setIcon** ([CharSequence](http://developer.android.com/reference/java/lang/CharSequence.html) footnote) 
+
+Sets the footnote text for the card.
+
+| Parameters | |
+| --- | --- |
+| footnote | the footnote text for this card |
+
+##### Returns
+
+-   this object for call chaining
+
+Added in API level XE21
+
+#### public [CardBuilder](CardBuilder) **setFootnote** (int footnoteId) 
+
+Sets the footnote text for the card using a string resource.
+
+| Parameters | |
+| --- | --- |
+| footnoteId | the footnote text resource ID for this card |
+
+##### Returns
+
+-   this object for call chaining
+
+Added in API level XE21
+
+#### public [CardBuilder](CardBuilder) **setIcon** ([Bitmap](http://developer.android.com/reference/android/graphics/Bitmap.html) iconBitmap)
+
+Adds an image, specified as a [`Bitmap`](http://developer.android.com/reference/android/graphics/Bitmap.html), to the card.
+
+| Parameters | |
+| --- | --- |
+| iconBitmap | the `Bitmap` image to add |
+
+##### Returns
+- this object for call chaining
+
+Added in API level XE21
+
+#### public [CardBuilder](CardBuilder) **setIcon** ([Drawable](http://developer.android.com/reference/android/graphics/drawable/Drawable.html) iconDrawable) 
+
+Adds an image, specified as a [`Drawable`](http://developer.android.com/reference/android/graphics/drawable/Drawable.html), to the card.
+
+This method only applies to cards that are converted into views using [`getView()`](CardBuilder#getView()). [`RemoteViews`](http://developer.android.com/reference/android/widget/RemoteViews.html) built by `CardBuilder` only support `Bitmap` and resource-based images. `Drawable` images on `RemoteViews` are not supported.
+
+| Parameters | |
+| --- | --- |
+| iconDrawable | the `Drawable` to use as the icon |
+
+##### Returns
+- this object for call chaining
+
+Added in API level XE21
+
+#### public [CardBuilder](CardBuilder) **setIcon** (int iconId) 
+
+Adds an image, specified as a drawable resource, to the card.
+
+| Parameters | |
+| --- | --- |
+| iconId | the resource ID to use as the icon |
+
+##### Returns
+- this object for call chaining
+
+Added in API level XE21
+
+#### public [CardBuilder](CardBuilder) **setSubheading** ([CharSequence](http://developer.android.com/reference/java/lang/CharSequence.html) subheading)
+
+Sets the subheading text for the card.
+
+| Parameters | |
+| --- | --- |
+| subheading | the subheading text for this card |
+
+##### Returns
+
+-   this object for call chaining
+
+Added in API level XE21
+
+#### public [CardBuilder](CardBuilder) **setSubheading** (int subheadingId)
+
+Sets the subheading text for the card using a string resource.
+
+| Parameters | |
+| --- | --- |
+| footnoteId | the footnote text resource ID for this card |
+
+##### Returns
+
+-   this object for call chaining
+
+Added in API level XE21
+
+#### public [CardBuilder](CardBuilder) **Text** (int textId)
+
+Sets the main text for the card using a string resource.
+
+| Parameters | |
+| --- | --- |
+| textId | main text resource ID for this card |
+
+##### Returns
+
+-   this object for call chaining
+
+Added in API level XE21
+
+#### public [CardBuilder](CardBuilder) **setText** ([CharSequence](http://developer.android.com/reference/java/lang/CharSequence.html) text)
+
+Sets the main text for the card.
+
+| Parameters | |
+| --- | --- |
+| text | main text for this card |
+
+##### Returns
+
+-   this object for call chaining
+
+Added in API level XE21
+
+#### public [CardBuilder](CardBuilder) **setTimestamp** ([CharSequence](http://developer.android.com/reference/java/lang/CharSequence.html) timestamp) 
+
+Sets the timestamp text for the card.
+
+| Parameters | |
+| --- | --- |
+| timestamp | the timestamp text for this card |
+
+##### Returns
+
+-   this object for call chaining
+
+Added in API level XE21
+
+#### public [CardBuilder](CardBuilder) **setTimestamp** (int timestampId) 
+
+Sets the timestamp text for the card using a string resource.
+
+| Parameters | |
+| --- | --- |
+| timestampId | the timestamp text resource ID for this card |
+
+##### Returns
+
+-   this object for call chaining
+
+Added in API level XE22
+
+#### public [CardBuilder](CardBuilder) **showStackIndicator** (boolean visible) 
+
+Shows an indicator if `visible` is true that this card represents a stack of cards, rather than a single card.
+
+| Parameters | |
+| --- | --- |
+| visible | true to show the stack indicator, or false to hide it |
+
+##### Returns
+
+-   this object for call chaining
 
 ---
 

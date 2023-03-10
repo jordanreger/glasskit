@@ -79,3 +79,4 @@
 	- [Overview](./archive/glass/develop/gdk/reference/com/google/android/glass/widget/package-summary)
 	- [CardBuilder](./archive/glass/develop/gdk/reference/com/google/android/glass/widget/CardBuilder)
 		- [Overview](./archive/glass/develop/gdk/reference/com/google/android/glass/widget/CardBuilder)
+		- [Layout](./archive/glass/develop/gdk/reference/com/google/android/glass/widget/CardBuilder.Layout)
