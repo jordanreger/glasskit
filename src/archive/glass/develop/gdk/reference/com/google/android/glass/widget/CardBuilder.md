@@ -30,13 +30,105 @@ If you need to support cards with multiple embedded layouts alongside the built-
 
 | Public Methods | |
 | --- | --- |
-| [CardBuilder](CardBuilder) | [addImage](#addImage(android.graphics.drawable.Drawable))([Drawable](http://developer.android.com/reference/android/graphics/drawable/Drawable.html) imageDrawable) |
-| [CardBuilder](CardBuilder) | [addImage](#addImage(android.graphics.Bitmap))([Bitmap](http://developer.android.com/reference/android/graphics/Bitmap.html) imageBitmap) |
-| [CardBuilder](CardBuilder) | [addImage](#addImage(int))(int imageId) |
+| [CardBuilder](CardBuilder.md) | [addImage](#addImage(android.graphics.drawable.Drawable))([Drawable](http://developer.android.com/reference/android/graphics/drawable/Drawable.html) imageDrawable) |
+| [CardBuilder](CardBuilder.md) | [addImage](#addImage(android.graphics.Bitmap))([Bitmap](http://developer.android.com/reference/android/graphics/Bitmap.html) imageBitmap) |
+| [CardBuilder](CardBuilder.md) | [addImage](#addImage(int))(int imageId) |
 | void | [clearImages](#clearImages)() |
 | int | [getItemViewType](#getItemViewType())() |
+| [RemoteViews](http://developer.android.com/reference/android/widget/RemoteViews.html) | [getRemoteViews](#getRemoteViews())() |
+| [View](http://developer.android.com/reference/android/view/View.html) | [getView](#getView(android.view.View,%20android.view.ViewGroup))([View](http://developer.android.com/reference/android/view/View.html) convertView, [ViewGroup](http://developer.android.com/reference/android/view/ViewGroup.html) parent) |
+| static int | [getViewTypeCount](#getViewTypeCount())() |
+| [CardBuilder](CardBuilder.md) | [setAttributionIcon](#setAttributionIcon(android.graphics.Bitmap))([Bitmap](http://developer.android.com/reference/android/graphics/Bitmap.html) iconBitmap) |
+| [CardBuilder](CardBuilder.md) | [setAttributionIcon](#setAttributionIcon(android.graphics.drawable.Drawable))([Drawable](http://developer.android.com/reference/android/graphics/drawable/Drawable.html) iconDrawable) |
+| [CardBuilder](CardBuilder.md) | [setAttributionIcon](#setAttributionIcon(int))(int iconId) |
+| [CardBuilder](CardBuilder.md) | [setEmbeddedLayout](#setEmbeddedLayout(int))(int layoutResId) |
+| [CardBuilder](CardBuilder.md) | [setFootNote](#setFootnote(java.lang.CharSequence))([CharSequence](http://developer.android.com/reference/java/lang/CharSequence.html) footnote) |
+| [CardBuilder](CardBuilder.md) | [setFootNote](#setFootnote(int))(int footnoteId) |
+| [CardBuilder](CardBuilder.md) | [setHeading](#setHeading(java.lang.CharSequence))([CharSequence](http://developer.android.com/reference/java/lang/CharSequence.html) heading) |
+| [CardBuilder](CardBuilder.md) | [setHeading](#setHeading(int))(int headingId) |
+| [CardBuilder](CardBuilder.md) | [setIcon](#setIcon(android.graphics.Bitmap))([Bitmap](http://developer.android.com/reference/android/graphics/Bitmap.html) iconBitmap) |
+| [CardBuilder](CardBuilder.md) | [setIcon](#setIcon(android.graphics.drawable.Drawable))([Drawable](http://developer.android.com/reference/android/graphics/drawable/Drawable.html) iconDrawable) |
+| [CardBuilder](CardBuilder.md) | [setIcon](#setIcon(int))(int iconId) |
+| [CardBuilder](CardBuilder.md) | [setSubheading](#setSubheading(java.lang.CharSequence))([CharSequence](http://developer.android.com/reference/java/lang/CharSequence.html) subheading) |
+| [CardBuilder](CardBuilder.md) | [setSubheading](#setSubheading(int))(int subheadingId) |
+| [CardBuilder](CardBuilder.md) | [setText](#setText(int))(int textId) |
+| [CardBuilder](CardBuilder.md) | [setText](#setText(java.lang.CharSequence))([CharSequence](http://developer.android.com/reference/java/lang/CharSequence.html) text) |
+| [CardBuilder](CardBuilder.md) | [setTimestamp](#setTimestamp(java.lang.CharSequence))([CharSequence](http://developer.android.com/reference/java/lang/CharSequence.html) timestamp) |
+| [CardBuilder](CardBuilder.md) | [setTimestamp](#setTimestamp(int))(int timestampId) |
+| [CardBuilder](CardBuilder.md) | [showStackIndicator](#showStackIndicator(boolean))(boolean visible) |
 
-> **TODO**: Finish list. Stopped at `RemoteViews`
+
+| Inherited Methods | |
+| --- | --- |
+| From class java.lang.Object | |
+| [Object](http://developer.android.com/reference/java/lang/Object.html) | clone() |
+| boolean | equals([Object](http://developer.android.com/reference/java/lang/Object.html) arg0) |
+| void | finalize()|
+| final [Class](https://developer.android.com/reference/java/lang/Class.html)\<?\> | getClass() |
+| int | hashCode() |
+| final void | notify() |
+| final void | notifyAll() |
+| [String](https://developer.android.com/reference/java/lang/String.html) | toString() |
+| final void | wait() |
+| final void | wait(long arg0, int arg1) |
+| final void | wait(long arg0) |
+
+## Public Constructors
+
+Added in API level XE21
+
+#### public **CardBuilder** ([Context](http://developer.android.com/reference/android/content/Context.html) context, [CardBuilder.Layout](CardBuilder.Layout) layout) 
+
+Constructs a new `CardBuilder`.
+
+| Parameters | |
+| --- | --- |
+| context | the `Context` that will be used by the builder to create its views. |
+| layout | the desired layout for the card |
+
+## Public Methods
+
+Added in API level XE21
+
+#### public [CardBuilder](CardBuilder) **addImage** ([Drawable](http://developer.android.com/reference/android/graphics/drawable/Drawable.html) imageDrawable) 
+
+Adds an image, specified as a [`Drawable`](http://developer.android.com/reference/android/graphics/drawable/Drawable.html), to the card.
+
+This method only applies to cards that are converted into views using [`getView()`](CardBuilder#getView()). [`RemoteViews`](http://developer.android.com/reference/android/widget/RemoteViews.html) built by `CardBuilder` only support `Bitmap` and resource-based images. `Drawable` images on `RemoteViews` are not supported.
+
+| Parameters | |
+| --- | --- |
+| imageDrawable | the `Drawable` image to add |
+
+##### Returns
+- this object for call chaining
+
+Added in API level XE21
+
+#### public [CardBuilder](CardBuilder) **addImage** ([Bitmap](http://developer.android.com/reference/android/graphics/Bitmap.html) imageBitmap)
+
+Adds an image, specified as a [`Bitmap`](http://developer.android.com/reference/android/graphics/Bitmap.html), to the card.
+
+| Parameters | |
+| --- | --- |
+| imageBitmap | the `Bitmap` image to add |
+
+##### Returns
+- this object for call chaining
+
+Added in API level XE21
+
+#### public [CardBuilder](CardBuilder) **addImage** (int imageId) 
+
+Adds an image, specified as a drawable resource, to the card.
+
+| Parameters | |
+| --- | --- |
+| imageId | the resource ID of the image to add |
+
+##### Returns
+- this object for call chaining
+
 
 ---
 

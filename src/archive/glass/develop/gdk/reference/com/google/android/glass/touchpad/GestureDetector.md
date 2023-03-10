@@ -91,7 +91,7 @@ Added in API level XE12
 
 #### public [GestureDetector](GestureDetector) **setAlwaysConsumeEvents** (boolean enabled) 
 
-Sets if the gesture detector should consume events passed to `[onMotionEvent(MotionEvent)](https://developers.google.com/glass/develop/gdk/reference/com/google/android/glass/touchpad/GestureDetector#onMotionEvent(android.view.MotionEvent))`, regardless of whether they were actually handled.
+Sets if the gesture detector should consume events passed to [`onMotionEvent(MotionEvent)`](GestureDetector#onMotionEvent(android.view.MotionEvent)), regardless of whether they were actually handled.
 
 Added in API level XE12
 
