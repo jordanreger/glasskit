@@ -80,3 +80,4 @@
 	- [CardBuilder](./archive/glass/develop/gdk/reference/com/google/android/glass/widget/CardBuilder.md)
 		- [Overview](./archive/glass/develop/gdk/reference/com/google/android/glass/widget/CardBuilder.md)
 		- [Layout](./archive/glass/develop/gdk/reference/com/google/android/glass/widget/CardBuilder.Layout.md)
+	- [CardScrollAdapter](./archive/glass/develop/gdk/reference/com/google/android/glass/widget/CardScrollAdapter.md)
