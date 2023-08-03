@@ -27,7 +27,7 @@ At the path `app/manifests/AndroidManifest.xml`, we're going to tweak just a cou
 </activity>
 ```
 
-As mentioned [here](https://developers.google.com/glass/develop/gdk/quick-start#for_android_experts) on step 4, to make sure you don't blind yourself, remove the following line inside the first `<application>` tag:
+As mentioned [here](../archive/glass/develop/gdk/quick-start.md#for_android_experts) on step 4, to make sure you don't blind yourself, remove the following line inside the first `<application>` tag:
 
 ```xml
 android:theme="@style/Theme.{project name}"

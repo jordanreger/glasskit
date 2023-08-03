@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en" class="sidebar-visible no-js dark">
+<html lang="en" class="sidebar-visible no-js light">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -37,7 +37,7 @@
         <!-- Provide site root to javascript -->
         <script>
             var path_to_root = "";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "coal" : "dark";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
@@ -63,7 +63,7 @@
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
             html.classList.remove('no-js')
-            html.classList.remove('dark')
+            html.classList.remove('light')
             html.classList.add(theme);
             html.classList.add('js');
         </script>
@@ -186,7 +186,7 @@
 <div style="break-before: page; page-break-before: always;"></div><h1 id="getting-started"><a class="header" href="#getting-started">Getting Started</a></h1>
 <p>Getting started with your Glass is fairly complicated, but don't let it phase you! Below is an <em><strong>incomplete</strong></em> tutorial on how to get your Glass up and running.</p>
 <h2 id="installing-xe24"><a class="header" href="#installing-xe24">Installing XE24</a></h2>
-<p>This is a bit confusing as the instructions have changed over the years, and practically every revision recently doesn't really work. The instructions on <a href="https://support.google.com/glass/answer/9649198?hl=en">this page</a> are a great starter, but some things don’t work. Here’s a (hopefully) decent walkthrough.</p>
+<p>This is a bit confusing as the instructions have changed over the years, and practically every revision recently doesn't really work. The instructions on <a href="https://web.archive.org/web/20221001235129/https://support.google.com/glass/answer/9649198?hl=en">this page</a> are a great starter, but some things don’t work. Here’s a (hopefully) decent walkthrough.</p>
 <h2 id="android-studio--google-usb-driver"><a class="header" href="#android-studio--google-usb-driver">Android Studio + Google USB Driver</a></h2>
 <ol>
 <li>Make sure to have Android Studio installed</li>
@@ -204,7 +204,7 @@
 <li>Type <code>bcdedit /set testsigning on</code> and press <strong>Enter</strong></li>
 </ol>
 <h2 id="editing-the-driver"><a class="header" href="#editing-the-driver">Editing the Driver</a></h2>
-<p>I would recommend following <a href="https://jeffzzq.medium.com/using-google-glass-in-2020-5f0a01188e6e">this tutorial</a> for the rest of the process.</p>
+<p>I would recommend following <a href="https://web.archive.org/web/20230803213234/https://jeffzzq.scribe.rip/using-google-glass-in-2020-5f0a01188e6e">this tutorial</a> for the rest of the process.</p>
 <blockquote>
 <p>You must edit the driver in <em>both</em> regular mode and fastboot; otherwise <code>adb</code> will not recognize the device.</p>
 </blockquote>
@@ -236,7 +236,7 @@
 	    android:resource=&quot;@xml/show_me_a_demo&quot; /&gt;  
 &lt;/activity&gt;
 </code></pre>
-<p>As mentioned <a href="https://developers.google.com/glass/develop/gdk/quick-start#for_android_experts">here</a> on step 4, to make sure you don't blind yourself, remove the following line inside the first <code>&lt;application&gt;</code> tag:</p>
+<p>As mentioned <a href="development/../archive/glass/develop/gdk/quick-start.html#for_android_experts">here</a> on step 4, to make sure you don't blind yourself, remove the following line inside the first <code>&lt;application&gt;</code> tag:</p>
 <pre><code class="language-xml">android:theme=&quot;@style/Theme.{project name}&quot;
 </code></pre>
 <h3 id="mainactivityjava"><a class="header" href="#mainactivityjava"><code>MainActivity.java</code></a></h3>
@@ -287,6 +287,15 @@ public class MainActivity extends Activity {
 <p>You can read about the GDK on the <a href="development/gdk/../../archive/glass/develop/gdk/index.html">corresponding archive page</a>.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="downloading-glassware"><a class="header" href="#downloading-glassware">Downloading Glassware</a></h1>
 <p>The GlassKit team is currently working on porting all of the old <a href="https://github.com/googleglass/">gdk-samples</a> and other basic applications.</p>
+<h2 id="helloglass"><a class="header" href="#helloglass">HelloGlass</a></h2>
+<p>A simple hello world project, meant as a jumping off point for new developers.</p>
+<p>[<a href="https://github.com/GlassKit/HelloGlass/releases/download/v1.0.0/HelloGlass.apk">Download</a>]</p>
+<h2 id="compass"><a class="header" href="#compass">Compass</a></h2>
+<p>The original Google Glass Compass app.</p>
+<p>[<a href="https://github.com/GlassKit/Compass/releases/download/v1.0.0/Compass.apk">Download</a>]</p>
+<h2 id="timer"><a class="header" href="#timer">Timer</a></h2>
+<p>The original Google Glass Timer app.</p>
+<p>[<a href="https://github.com/GlassKit/Timer/releases/download/v1.0.0/Timer.apk">Download</a>]</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="gdk-documentation-archive"><a class="header" href="#gdk-documentation-archive">GDK Documentation Archive</a></h1>
 <p>Welcome to the <em>un</em>official official GDK documentation archive. This archive may be full of broken links, content errors, etc., but it's simply here to be a backup just in case Google ever gets rid of the <a href="https://developers.google.com/glass">official GDK documentation</a>. If you do happen to find a broken link, content error, or something else, please <a href="https://github.com/GlassKit/website/issues">submit an issue</a>!</p>
 <h2 id="license-1"><a class="header" href="#license-1">License</a></h2>
@@ -879,7 +888,7 @@ Timeline cards have 40 pixels of padding on all sides for the text content. This
 <li><strong>Theme: None</strong> (ADT and Android Studio usually assign a theme automatically, even if you specify no theme, so remove the <code>android:theme</code> property from your manifest after creating a project.)</li>
 </ul>
 </li>
-<li>Head on over to the <a href="archive/glass/develop/gdk/archive/glass/develop/patterns/index.html">pattern guides</a> and <a href="archive/glass/develop/gdk/archive/glass/develop/gdk/index.html">developer guides</a> for more learning.</li>
+<li>Head on over to the <a href="archive/glass/develop/gdk/../archive/glass/develop/patterns/index.html">pattern guides</a> and <a href="archive/glass/develop/gdk/../archive/glass/develop/gdk/index.html">developer guides</a> for more learning.</li>
 </ol>
 <p><img src="archive/glass/develop/gdk/studio_glass.png" alt="" /></p>
 <h2 id="for-android-beginners"><a class="header" href="#for-android-beginners">For Android beginners</a></h2>
@@ -898,7 +907,7 @@ Timeline cards have 40 pixels of padding on all sides for the text content. This
 <li><a href="https://github.com/googleglass/gdk-apidemo-sample">ApiDemo</a> [<strong>TODO</strong>: SWITCH LINK]: Gallery of some GDK APIs usage.</li>
 <li><a href="https://github.com/glasskit/compass">Compass</a>: Simple compass using a <code>LiveCard</code>.</li>
 <li><a href="https://github.com/googleglass/gdk-stopwatch-sample">Stopwatch</a> [<strong>TODO</strong>: SWITCH LINK]: Simple stopwatch using a <code>LiveCard</code>.</li>
-<li><a href="https://github.com/googleglass/gdk-timer-sample">Timer</a> [<strong>TODO</strong>: SWITCH LINK)]: Simple timer using a combination of <code>Immersion</code> and <code>LiveCard</code>.</li>
+<li><a href="https://github.com/glasskit/timer">Timer</a>: Simple timer using a combination of <code>Immersion</code> and <code>LiveCard</code>.</li>
 </ul>
 <p>To import one of the samples into Android Studio:</p>
 <ol>
@@ -7091,6 +7100,22 @@ private void processPictureWhenReady(final String picturePath) {
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

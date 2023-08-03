@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en" class="sidebar-visible no-js dark">
+<html lang="en" class="sidebar-visible no-js light">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -36,7 +36,7 @@
         <!-- Provide site root to javascript -->
         <script>
             var path_to_root = "../../../../";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "coal" : "dark";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
@@ -62,7 +62,7 @@
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
             html.classList.remove('no-js')
-            html.classList.remove('dark')
+            html.classList.remove('light')
             html.classList.add(theme);
             html.classList.add('js');
         </script>
@@ -187,7 +187,7 @@
 <li><strong>Theme: None</strong> (ADT and Android Studio usually assign a theme automatically, even if you specify no theme, so remove the <code>android:theme</code> property from your manifest after creating a project.)</li>
 </ul>
 </li>
-<li>Head on over to the <a href="archive/glass/develop/patterns/index.html">pattern guides</a> and <a href="archive/glass/develop/gdk/index.html">developer guides</a> for more learning.</li>
+<li>Head on over to the <a href="../archive/glass/develop/patterns/index.html">pattern guides</a> and <a href="../archive/glass/develop/gdk/index.html">developer guides</a> for more learning.</li>
 </ol>
 <p><img src="studio_glass.png" alt="" /></p>
 <h2 id="for-android-beginners"><a class="header" href="#for-android-beginners">For Android beginners</a></h2>
@@ -206,7 +206,7 @@
 <li><a href="https://github.com/googleglass/gdk-apidemo-sample">ApiDemo</a> [<strong>TODO</strong>: SWITCH LINK]: Gallery of some GDK APIs usage.</li>
 <li><a href="https://github.com/glasskit/compass">Compass</a>: Simple compass using a <code>LiveCard</code>.</li>
 <li><a href="https://github.com/googleglass/gdk-stopwatch-sample">Stopwatch</a> [<strong>TODO</strong>: SWITCH LINK]: Simple stopwatch using a <code>LiveCard</code>.</li>
-<li><a href="https://github.com/googleglass/gdk-timer-sample">Timer</a> [<strong>TODO</strong>: SWITCH LINK)]: Simple timer using a combination of <code>Immersion</code> and <code>LiveCard</code>.</li>
+<li><a href="https://github.com/glasskit/timer">Timer</a>: Simple timer using a combination of <code>Immersion</code> and <code>LiveCard</code>.</li>
 </ul>
 <p>To import one of the samples into Android Studio:</p>
 <ol>
@@ -248,6 +248,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

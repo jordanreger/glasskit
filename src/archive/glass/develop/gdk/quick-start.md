@@ -14,7 +14,7 @@ If you're comfortable with Android, here's all you need to know:
 4.  When you're ready to create a project for your own Glassware, use these settings:
     -   **Compile with: Glass Development Kit Developer Preview**
     -   **Theme: None** (ADT and Android Studio usually assign a theme automatically, even if you specify no theme, so remove the `android:theme` property from your manifest after creating a project.)
-5.  Head on over to the [pattern guides](archive/glass/develop/patterns/index.md) and [developer guides](archive/glass/develop/gdk/index.md) for more learning.
+5.  Head on over to the [pattern guides](../archive/glass/develop/patterns/index.md) and [developer guides](../archive/glass/develop/gdk/index.md) for more learning.
 
 ![](studio_glass.png)
 
@@ -37,7 +37,7 @@ To help get you started, GDK sample projects are available on our [GitHub](http
 -   [ApiDemo](https://github.com/googleglass/gdk-apidemo-sample) [**TODO**: SWITCH LINK]: Gallery of some GDK APIs usage.
 -   [Compass](https://github.com/glasskit/compass): Simple compass using a `LiveCard`.
 -   [Stopwatch](https://github.com/googleglass/gdk-stopwatch-sample) [**TODO**: SWITCH LINK]: Simple stopwatch using a `LiveCard`.
--   [Timer](https://github.com/googleglass/gdk-timer-sample) [**TODO**: SWITCH LINK)]: Simple timer using a combination of `Immersion` and `LiveCard`.
+-   [Timer](https://github.com/glasskit/timer): Simple timer using a combination of `Immersion` and `LiveCard`.
 
 To import one of the samples into Android Studio:
 

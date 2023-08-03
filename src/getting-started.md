@@ -2,7 +2,7 @@
 Getting started with your Glass is fairly complicated, but don't let it phase you! Below is an ***incomplete*** tutorial on how to get your Glass up and running.
 
 ## Installing XE24
-This is a bit confusing as the instructions have changed over the years, and practically every revision recently doesn't really work. The instructions on [this page](https://support.google.com/glass/answer/9649198?hl=en) are a great starter, but some things don’t work. Here’s a (hopefully) decent walkthrough.
+This is a bit confusing as the instructions have changed over the years, and practically every revision recently doesn't really work. The instructions on [this page](https://web.archive.org/web/20221001235129/https://support.google.com/glass/answer/9649198?hl=en) are a great starter, but some things don’t work. Here’s a (hopefully) decent walkthrough.
 
 ## Android Studio + Google USB Driver
 1. Make sure to have Android Studio installed
@@ -19,7 +19,7 @@ This will allow us to temporarily disable driver signature enforcement. This onl
 5. Type `bcdedit /set testsigning on` and press **Enter**
 
 ## Editing the Driver
-I would recommend following [this tutorial](https://jeffzzq.medium.com/using-google-glass-in-2020-5f0a01188e6e) for the rest of the process.
+I would recommend following [this tutorial](https://web.archive.org/web/20230803213234/https://jeffzzq.scribe.rip/using-google-glass-in-2020-5f0a01188e6e) for the rest of the process.
 
 > You must edit the driver in *both* regular mode and fastboot; otherwise `adb` will not recognize the device.
 
