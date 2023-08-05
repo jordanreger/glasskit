@@ -1,3 +1,10 @@
+---
+title: GlassKit index
+toc: false
+---
+
+Welcome to the GlassKit wiki. This is an index of all the pages in this wiki. If you're just here to learn about it, please visit the [About](about.md) page.
+
 [About](about.md)
 
 # GlassKit
