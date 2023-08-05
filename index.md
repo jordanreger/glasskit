@@ -1,16 +1,83 @@
+[About](about.md)
+
 # GlassKit
-**GlassKit** is a modern revival of the original Google Glass Explorer Edition. This is accomplished by providing up-to-date information on how to revive your Glass with XE24, how to restore some of the original functionality, and how to build Glassware yourself!
+- [Getting Started](./getting-started.md)
+- [Developing Glassware](./development/index.md)
+	- [Hello Glass tutorial](./development/hello-glass.md)
+	- [Glass Development Kit](./development/gdk/index.md)
+- [Downloading Glassware](./glassware/index.md)
 
-> Note: This project is not under active development, as the lead developer, [Jordan Reger](https://sr.ht/~jordanreger) is not in a position to continuously maintain it. However, everything here ***does*** still work, and can be used.
+# Official GDK Guides
 
-## About
-The Google Glass has been killed twice as of 2023. This is a shame, as I (and many others) believe that the Google Glass is an important tool and a piece of tech history. Therefore, it should be maintained. The repositories are either archived repositories from the original [Google Glass GitHub](https://github.com/googleglass) page or are repositories made by the GlassKit team for public use. The website, [glasskit.dev](https://glasskit.dev), is an archive of the GDK guides as well as instructions on how to revive your Glass and add these projects to it. Above all, this project is an archive for the sake of preserving vital instructions for making Glassware and operating your Glass.
+- [About the Archive](./archive/index.md)
+- [Home](./archive/glass/index.md)
+- [Design](./archive/glass/design/index.md)
+	- [Principles](./archive/glass/design/principles.md)
+	- [User Interface](./archive/glass/design/ui.md)
+	- [Patterns](./archive/glass/design/patterns.md)
+	- [Style](./archive/glass/design/style.md)
+- [Development Patterns](./archive/glass/develop/patterns/index.md)
+	- [Ongoing Task](./archive/glass/develop/patterns/ongoing-task.md)
+	- [Immersion](./archive/glass/develop/patterns/immersion.md)
+- [Get Started](./archive/glass/develop/gdk/index.md)
+	- [Quick Start](./archive/glass/develop/gdk/quick-start.md)
+	- [Starting Glassware](./archive/glass/develop/gdk/starting-glassware.md)
+	- [System Permissions](./archive/glass/develop/gdk/permissions.md)
+	- [Authentication](./archive/glass/develop/gdk/authentication.md)
+- [User Interface](./archive/glass/develop/gdk/index.md)
+	- [Notification Sync](./archive/glass/develop/gdk/notification-sync.md)
+	- [Live Cards](./archive/glass/develop/gdk/live-cards.md)
+	- [Immersions](./archive/glass/develop/gdk/immersions.md)
+	- [Card Design](./archive/glass/develop/gdk/card-design.md)
+	- [Card Scroller](./archive/glass/develop/gdk/card-scroller.md)
+	- [Slider](./archive/glass/develop/gdk/slider.md)
+- [Inputs and Sensors](./archive/glass/develop/gdk/index.md)
+	- [Voice Input](./archive/glass/develop/gdk/voice.md)
+	- [Touch Gestures](./archive/glass/develop/gdk/touch.md)
+	- [Location and Sensors](./archive/glass/develop/gdk/location-sensors.md)
+	- [Camera](./archive/glass/develop/gdk/camera.md)
+- [Distribution](./archive/glass/distribute/index.md)
+	- [Glassware Checklist](./archive/glass/distribute/checklist.md)
+	- [Glassware Update](./archive/glass/distribute/update.md)
+	- [Voice Command Checklist](./archive/glass/distribute/voice-checklist.md)
+	- [Branding Guidelines](./archive/glass/distribute/branding-guidelines.md)
+	- [Best Practices](./archive/glass/distribute/best-practices.md)
+	- [Glass Enterprise Edition](./archive/glass/distribute/glass-enterprise.md)
 
-## License
-All code in the GlassKit project is licensed under the [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) license, just as the original code was. The website is covered under the Creative Commons [BY 4.0](https://creativecommons.org/licenses/by/4.0/) license, as Google requests. This project is simply an archive so that future Glass owners can have a starting point. If you are from Google and would like these taken down, please email me: [mail@jordanreger.com](mailto:mail@jordanreger.com). I do not intend to infringe on Google's property, and will act accordingly.
+# Official GDK Reference
 
-## Contributing
-GlassKit is a free and open source project. The code is on [Sourcehut](https://sr.ht/~jordanreger/GlassKit) and [GitHub](https://github.com/GlassKit).
-
-## Contact
-Please email [contact@glasskit.dev](mailto:contact@glasskit.dev) for questions and concerns. There are other maintainers, but at the moment this project is not under active development so please email Jordan.
+- [Overview](./archive/glass/develop/gdk/reference/index.md)
+- [glass.app](./archive/glass/develop/gdk/reference/com/google/android/glass/app/package-summary.md)
+	- [Overview](./archive/glass/develop/gdk/reference/com/google/android/glass/app/package-summary.md)
+	- [ContextualMenus](./archive/glass/develop/gdk/reference/com/google/android/glass/app/ContextualMenus.md)
+		- [Overview](./archive/glass/develop/gdk/reference/com/google/android/glass/app/ContextualMenus.md)
+		- [Command](./archive/glass/develop/gdk/reference/com/google/android/glass/app/ContextualMenus.Command.md)
+	- [VoiceTriggers](./archive/glass/develop/gdk/reference/com/google/android/glass/app/VoiceTriggers.md)
+		- [Overview](./archive/glass/develop/gdk/reference/com/google/android/glass/app/VoiceTriggers.md)
+		- [Command](./archive/glass/develop/gdk/reference/com/google/android/glass/app/VoiceTriggers.Command.md)
+- [glass.content](./archive/glass/develop/gdk/reference/com/google/android/glass/content/package-summary.md)
+	- [Overview](./archive/glass/develop/gdk/reference/com/google/android/glass/contents/package-summary.md)
+	- [Intents](./archive/glass/develop/gdk/reference/com/google/android/glass/content/Intents.md)
+- [glass.media](./archive/glass/develop/gdk/reference/com/google/android/glass/media/package-summary.md)
+	- [Overview](./archive/glass/develop/gdk/reference/com/google/android/glass/media/package-summary.md)
+	- [Sounds](./archive/glass/develop/gdk/reference/com/google/android/glass/media/Sounds.md)
+- [glass.touchpad](./archive/glass/develop/gdk/reference/com/google/android/glass/touchpad/package-summary.md)
+	- [Overview](./archive/glass/develop/gdk/reference/com/google/android/glass/touchpad/package-summary.md)
+	- [Gesture](./archive/glass/develop/gdk/reference/com/google/android/glass/touchpad/Gesture.md)
+	- [GestureDetector](./archive/glass/develop/gdk/reference/com/google/android/glass/touchpad/GestureDetector.md)
+		- [Overview](./archive/glass/develop/gdk/reference/com/google/android/glass/touchpad/GestureDetector.md)
+		- [BaseListener](./archive/glass/develop/gdk/reference/com/google/android/glass/touchpad/GestureDetector.BaseListener.md)
+		- [FingerListener](./archive/glass/develop/gdk/reference/com/google/android/glass/touchpad/GestureDetector.FingerListener.md)
+		- [OneFingerScrollListener](./archive/glass/develop/gdk/reference/com/google/android/glass/touchpad/GestureDetector.OneFingerScrollListener.md)
+		- [ScrollListener](./archive/glass/develop/gdk/reference/com/google/android/glass/touchpad/GestureDetector.ScrollListener.md)
+		- [TwoFingerScrollListener](./archive/glass/develop/gdk/reference/com/google/android/glass/touchpad/GestureDetector.TwoFingerScrollListener.md)
+- [glass.view](./archive/glass/develop/gdk/reference/com/google/android/glass/view/package-summary.md)
+	- [Overview](./archive/glass/develop/gdk/reference/com/google/android/glass/view/package-summary.md)
+	- [MenuUtils](./archive/glass/develop/gdk/reference/com/google/android/glass/view/MenuUtils.md)
+	- [WindowUtils](./archive/glass/develop/gdk/reference/com/google/android/glass/view/WindowUtils.md)
+- [glass.widget](./archive/glass/develop/gdk/reference/com/google/android/glass/widget/package-summary.md)
+	- [Overview](./archive/glass/develop/gdk/reference/com/google/android/glass/widget/package-summary.md)
+	- [CardBuilder](./archive/glass/develop/gdk/reference/com/google/android/glass/widget/CardBuilder.md)
+		- [Overview](./archive/glass/develop/gdk/reference/com/google/android/glass/widget/CardBuilder.md)
+		- [Layout](./archive/glass/develop/gdk/reference/com/google/android/glass/widget/CardBuilder.Layout.md)
+	- [CardScrollAdapter](./archive/glass/develop/gdk/reference/com/google/android/glass/widget/CardScrollAdapter.md)
