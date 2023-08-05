@@ -1,11 +1,10 @@
 ---
 title: GlassKit index
-toc: false
 ---
 
-Welcome to the GlassKit wiki. This is an index of all the pages in this wiki. If you're just here to learn about it, please visit the [About](about.md) page.
+Welcome to the GlassKit wiki. GlassKit is a project to revive the Google Glass built by [Jordan Reger](https://sr.ht/~jordanreger) and other contributors in the Glass community.
 
-[About](about.md)
+This is an index of all the pages in this wiki. If you're just here to learn about it, please visit the [About](about.md) page.
 
 # GlassKit
 - [Getting Started](./getting-started.md)
