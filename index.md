@@ -1,0 +1,91 @@
+---
+title: GlassKit index
+---
+
+Welcome to the GlassKit wiki. GlassKit is a project to revive the Google Glass built by [Jordan Reger](https://sr.ht/~jordanreger) and other contributors in the Glass community.
+
+This is an index of all the pages in this wiki. If you're just here to learn about it, please visit the [About](about.md) page.
+
+> TODO: update links
+
+# GlassKit
+- [Getting Started](./getting-started.md)
+- [Developing Glassware](./development/index.md)
+	- [Hello Glass tutorial](./development/hello-glass.md)
+	- [Glass Development Kit](./development/gdk/index.md)
+- [Downloading Glassware](./glassware/index.md)
+
+# Official GDK Guides
+
+- [About the Archive](./archive/index.md)
+- [Home](./archive/glass/index.md)
+- [Design](./archive/glass/design/index.md)
+	- [Principles](./archive/glass/design/principles.md)
+	- [User Interface](./archive/glass/design/ui.md)
+	- [Patterns](./archive/glass/design/patterns.md)
+	- [Style](./archive/glass/design/style.md)
+- [Development Patterns](./archive/glass/develop/patterns/index.md)
+	- [Ongoing Task](./archive/glass/develop/patterns/ongoing-task.md)
+	- [Immersion](./archive/glass/develop/patterns/immersion.md)
+- [Get Started](./archive/glass/develop/gdk/index.md)
+	- [Quick Start](./archive/glass/develop/gdk/quick-start.md)
+	- [Starting Glassware](./archive/glass/develop/gdk/starting-glassware.md)
+	- [System Permissions](./archive/glass/develop/gdk/permissions.md)
+	- [Authentication](./archive/glass/develop/gdk/authentication.md)
+- [User Interface](./archive/glass/develop/gdk/index.md)
+	- [Notification Sync](./archive/glass/develop/gdk/notification-sync.md)
+	- [Live Cards](./archive/glass/develop/gdk/live-cards.md)
+	- [Immersions](./archive/glass/develop/gdk/immersions.md)
+	- [Card Design](./archive/glass/develop/gdk/card-design.md)
+	- [Card Scroller](./archive/glass/develop/gdk/card-scroller.md)
+	- [Slider](./archive/glass/develop/gdk/slider.md)
+- [Inputs and Sensors](./archive/glass/develop/gdk/index.md)
+	- [Voice Input](./archive/glass/develop/gdk/voice.md)
+	- [Touch Gestures](./archive/glass/develop/gdk/touch.md)
+	- [Location and Sensors](./archive/glass/develop/gdk/location-sensors.md)
+	- [Camera](./archive/glass/develop/gdk/camera.md)
+- [Distribution](./archive/glass/distribute/index.md)
+	- [Glassware Checklist](./archive/glass/distribute/checklist.md)
+	- [Glassware Update](./archive/glass/distribute/update.md)
+	- [Voice Command Checklist](./archive/glass/distribute/voice-checklist.md)
+	- [Branding Guidelines](./archive/glass/distribute/branding-guidelines.md)
+	- [Best Practices](./archive/glass/distribute/best-practices.md)
+	- [Glass Enterprise Edition](./archive/glass/distribute/glass-enterprise.md)
+
+# Official GDK Reference
+
+- [Overview](./archive/glass/develop/gdk/reference/index.md)
+- [glass.app](./archive/glass/develop/gdk/reference/com/google/android/glass/app/package-summary.md)
+	- [Overview](./archive/glass/develop/gdk/reference/com/google/android/glass/app/package-summary.md)
+	- [ContextualMenus](./archive/glass/develop/gdk/reference/com/google/android/glass/app/ContextualMenus.md)
+		- [Overview](./archive/glass/develop/gdk/reference/com/google/android/glass/app/ContextualMenus.md)
+		- [Command](./archive/glass/develop/gdk/reference/com/google/android/glass/app/ContextualMenus.Command.md)
+	- [VoiceTriggers](./archive/glass/develop/gdk/reference/com/google/android/glass/app/VoiceTriggers.md)
+		- [Overview](./archive/glass/develop/gdk/reference/com/google/android/glass/app/VoiceTriggers.md)
+		- [Command](./archive/glass/develop/gdk/reference/com/google/android/glass/app/VoiceTriggers.Command.md)
+- [glass.content](./archive/glass/develop/gdk/reference/com/google/android/glass/content/package-summary.md)
+	- [Overview](./archive/glass/develop/gdk/reference/com/google/android/glass/contents/package-summary.md)
+	- [Intents](./archive/glass/develop/gdk/reference/com/google/android/glass/content/Intents.md)
+- [glass.media](./archive/glass/develop/gdk/reference/com/google/android/glass/media/package-summary.md)
+	- [Overview](./archive/glass/develop/gdk/reference/com/google/android/glass/media/package-summary.md)
+	- [Sounds](./archive/glass/develop/gdk/reference/com/google/android/glass/media/Sounds.md)
+- [glass.touchpad](./archive/glass/develop/gdk/reference/com/google/android/glass/touchpad/package-summary.md)
+	- [Overview](./archive/glass/develop/gdk/reference/com/google/android/glass/touchpad/package-summary.md)
+	- [Gesture](./archive/glass/develop/gdk/reference/com/google/android/glass/touchpad/Gesture.md)
+	- [GestureDetector](./archive/glass/develop/gdk/reference/com/google/android/glass/touchpad/GestureDetector.md)
+		- [Overview](./archive/glass/develop/gdk/reference/com/google/android/glass/touchpad/GestureDetector.md)
+		- [BaseListener](./archive/glass/develop/gdk/reference/com/google/android/glass/touchpad/GestureDetector.BaseListener.md)
+		- [FingerListener](./archive/glass/develop/gdk/reference/com/google/android/glass/touchpad/GestureDetector.FingerListener.md)
+		- [OneFingerScrollListener](./archive/glass/develop/gdk/reference/com/google/android/glass/touchpad/GestureDetector.OneFingerScrollListener.md)
+		- [ScrollListener](./archive/glass/develop/gdk/reference/com/google/android/glass/touchpad/GestureDetector.ScrollListener.md)
+		- [TwoFingerScrollListener](./archive/glass/develop/gdk/reference/com/google/android/glass/touchpad/GestureDetector.TwoFingerScrollListener.md)
+- [glass.view](./archive/glass/develop/gdk/reference/com/google/android/glass/view/package-summary.md)
+	- [Overview](./archive/glass/develop/gdk/reference/com/google/android/glass/view/package-summary.md)
+	- [MenuUtils](./archive/glass/develop/gdk/reference/com/google/android/glass/view/MenuUtils.md)
+	- [WindowUtils](./archive/glass/develop/gdk/reference/com/google/android/glass/view/WindowUtils.md)
+- [glass.widget](./archive/glass/develop/gdk/reference/com/google/android/glass/widget/package-summary.md)
+	- [Overview](./archive/glass/develop/gdk/reference/com/google/android/glass/widget/package-summary.md)
+	- [CardBuilder](./archive/glass/develop/gdk/reference/com/google/android/glass/widget/CardBuilder.md)
+		- [Overview](./archive/glass/develop/gdk/reference/com/google/android/glass/widget/CardBuilder.md)
+		- [Layout](./archive/glass/develop/gdk/reference/com/google/android/glass/widget/CardBuilder.Layout.md)
+	- [CardScrollAdapter](./archive/glass/develop/gdk/reference/com/google/android/glass/widget/CardScrollAdapter.md)
